@@ -734,7 +734,7 @@ lltok::Kind LLLexer::LexIdentifier() {
   INSTKEYWORD(shl,   Shl);  INSTKEYWORD(lshr,  LShr); INSTKEYWORD(ashr,  AShr);
   INSTKEYWORD(and,   And);  INSTKEYWORD(or,    Or);   INSTKEYWORD(xor,   Xor);
   INSTKEYWORD(icmp,  ICmp); INSTKEYWORD(fcmp,  FCmp);
-  INSTKEYWORD(xxx,   Xxxx);
+
 
   INSTKEYWORD(phi,         PHI);
   INSTKEYWORD(call,        Call);

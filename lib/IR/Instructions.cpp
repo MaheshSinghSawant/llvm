@@ -1977,12 +1977,6 @@ void BinaryOperator::init(BinaryOps iType) {
     assert(getType()->isIntOrIntVectorTy() &&
            "Tried to create an integer operation on a non-integer type!");
     break;
-  case Xxxx:
-    assert(getType() == LHS->getType() &&
-           "Arithmetic operation should return same type as operands!");
-    assert(getType()->isIntOrIntVectorTy() &&
-           "Tried to create an integer operation on a non-integer type!");
-          break;
   case FAdd: case FSub:
   case FMul:
     assert(getType() == LHS->getType() &&

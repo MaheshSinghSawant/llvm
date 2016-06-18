@@ -2992,7 +2992,6 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
   case lltok::kw_sub:
   case lltok::kw_fsub:
   case lltok::kw_mul:
-  case lltok::kw_xxx:
   case lltok::kw_fmul:
   case lltok::kw_udiv:
   case lltok::kw_sdiv:
@@ -3011,7 +3010,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     Lex.Lex();
     LocTy ModifierLoc = Lex.getLoc();
     if (Opc == Instruction::Add || Opc == Instruction::Sub ||
-        Opc == Instruction::Mul || Opc == Instruction::Xxxx || Opc == Instruction::Shl) {
+        Opc == Instruction::Mul || Opc == Instruction::Shl) {
       if (EatIfPresent(lltok::kw_nuw))
         NUW = true;
       if (EatIfPresent(lltok::kw_nsw)) {
@@ -3043,7 +3042,6 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     case Instruction::Add:
     case Instruction::Sub:
     case Instruction::Mul:
-    case Instruction::Xxxx:
     case Instruction::UDiv:
     case Instruction::SDiv:
     case Instruction::URem:
@@ -4895,7 +4893,6 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
   case lltok::kw_add:
   case lltok::kw_sub:
   case lltok::kw_mul:
-  case lltok::kw_xxx:
   case lltok::kw_shl: {
     bool NUW = EatIfPresent(lltok::kw_nuw);
     bool NSW = EatIfPresent(lltok::kw_nsw);

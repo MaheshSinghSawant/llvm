@@ -593,7 +593,18 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="" />
+    <list default="true" readonly="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" afterPath="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" afterPath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instruction.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instruction.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instructions.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
+    </list>
     <ignored path="llvm.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -613,41 +624,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Instruction.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
+      <file leaf-file-name="InstVisitor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1155">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LLLexer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="736" column="25" selection-start-line="736" selection-start-column="25" selection-end-line="736" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LLParser.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLParser.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="3058" column="26" selection-start-line="3058" selection-start-column="23" selection-end-line="3058" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BitcodeReader.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="786" column="0" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+            <state relative-caret-position="-2951">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -663,51 +644,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitcodeWriter.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="3275" column="24" selection-start-line="3275" selection-start-column="21" selection-end-line="3275" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instruction.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="571" column="11" selection-start-line="571" selection-start-column="8" selection-end-line="571" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instructions.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="1979" column="11" selection-start-line="1979" selection-start-column="11" selection-end-line="1979" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instruction.def" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Instruction.def" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+            <state relative-caret-position="364">
+              <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
               <folding>
                 <element signature="e#908#952#0" expanded="true" />
               </folding>
@@ -731,14 +682,17 @@
         <option value="$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/examples/Fibonacc/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/examples/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
+        <option value="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
+        <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.h" />
+        <option value="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" />
         <option value="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
+        <option value="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
+        <option value="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
         <option value="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" />
         <option value="$PROJECT_DIR$/lib/IR/Instruction.cpp" />
         <option value="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
-        <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
-        <option value="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
-        <option value="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
       </list>
     </option>
   </component>
@@ -795,6 +749,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="llvm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -804,6 +812,8 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tos" />
     <property name="FullScreen" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -4188,14 +4198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="237" column="19" selection-start-line="237" selection-start-column="13" selection-end-line="237" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -4254,72 +4256,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
-          <folding>
-            <element signature="e#908#952#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="736" column="25" selection-start-line="736" selection-start-column="25" selection-end-line="736" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="3058" column="26" selection-start-line="3058" selection-start-column="23" selection-end-line="3058" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="3275" column="24" selection-start-line="3275" selection-start-column="21" selection-end-line="3275" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="571" column="11" selection-start-line="571" selection-start-column="8" selection-end-line="571" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="1979" column="11" selection-start-line="1979" selection-start-column="11" selection-end-line="1979" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1155">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="786" column="0" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -4328,11 +4264,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="329" column="35" selection-start-line="329" selection-start-column="35" selection-end-line="329" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="3012" column="35" selection-start-line="3012" selection-start-column="35" selection-end-line="3012" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2445">
+          <caret line="601" column="13" selection-start-line="601" selection-start-column="11" selection-end-line="601" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7704">
+          <caret line="4213" column="48" selection-start-line="4213" selection-start-column="47" selection-end-line="4213" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2951">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31224">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="277" column="25" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="2153" column="46" selection-start-line="2153" selection-start-column="45" selection-end-line="2153" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
+          <folding>
+            <element signature="e#908#952#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

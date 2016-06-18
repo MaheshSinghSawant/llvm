@@ -763,8 +763,6 @@ static int getDecodedBinaryOpcode(unsigned Val, Type *Ty) {
     return IsFP ? Instruction::FSub : Instruction::Sub;
   case bitc::BINOP_MUL:
     return IsFP ? Instruction::FMul : Instruction::Mul;
-  case bitc::BINOP_Xxx:
-    return Instruction::Xxxx;
   case bitc::BINOP_UDIV:
     return IsFP ? -1 : Instruction::UDiv;
 
@@ -2827,7 +2825,6 @@ std::error_code BitcodeReader::parseConstants() {
           if (Opc == Instruction::Add ||
               Opc == Instruction::Sub ||
               Opc == Instruction::Mul ||
-              Opc == Instruction::Xxxx ||
               Opc == Instruction::Shl) {
             if (Record[3] & (1 << bitc::OBO_NO_SIGNED_WRAP))
               Flags |= OverflowingBinaryOperator::NoSignedWrap;
@@ -4205,7 +4202,6 @@ std::error_code BitcodeReader::parseFunctionBody(Function *F) {
         if (Opc == Instruction::Add ||
             Opc == Instruction::Sub ||
             Opc == Instruction::Mul ||
-            Opc == Instruction::Xxxx ||
             Opc == Instruction::Shl) {
           if (Record[OpNum] & (1 << bitc::OBO_NO_SIGNED_WRAP))
             cast<BinaryOperator>(I)->setHasNoSignedWrap(true);

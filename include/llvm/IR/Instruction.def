@@ -133,7 +133,6 @@ HANDLE_BINARY_INST(19, FDiv , BinaryOperator)
 HANDLE_BINARY_INST(20, URem , BinaryOperator)
 HANDLE_BINARY_INST(21, SRem , BinaryOperator)
 HANDLE_BINARY_INST(22, FRem , BinaryOperator)
-HANDLE_BINARY_INST(100, Xxxx , BinaryOperator)
 
 // Logical operators (integer operands)
 HANDLE_BINARY_INST(23, Shl  , BinaryOperator) // Shift left  (logical)
@@ -142,7 +141,7 @@ HANDLE_BINARY_INST(25, AShr , BinaryOperator) // Shift right (arithmetic)
 HANDLE_BINARY_INST(26, And  , BinaryOperator)
 HANDLE_BINARY_INST(27, Or   , BinaryOperator)
 HANDLE_BINARY_INST(28, Xor  , BinaryOperator)
-  LAST_BINARY_INST(100)
+  LAST_BINARY_INST(28)
 
 // Memory operators...
  FIRST_MEMORY_INST(29)

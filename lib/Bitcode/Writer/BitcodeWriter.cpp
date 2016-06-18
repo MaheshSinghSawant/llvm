@@ -90,7 +90,6 @@ static unsigned GetEncodedBinaryOpcode(unsigned Opcode) {
   case Instruction::Sub:
   case Instruction::FSub: return bitc::BINOP_SUB;
   case Instruction::Mul:
-  case Instruction::Xxxx:
   case Instruction::FMul: return bitc::BINOP_MUL;
   case Instruction::UDiv: return bitc::BINOP_UDIV;
   case Instruction::FDiv:

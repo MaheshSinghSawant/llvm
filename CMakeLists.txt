@@ -84,6 +84,7 @@ if(LLVM_PARALLEL_LINK_JOBS)
   endif()
 endif()
 
+# MARK: Custom Modules
 # Add path for custom modules
 set(CMAKE_MODULE_PATH
   ${CMAKE_MODULE_PATH}

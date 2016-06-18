@@ -276,7 +276,6 @@ const char *Instruction::getOpcodeName(unsigned OpCode) {
   case Sub: return "sub";
   case FSub: return "fsub";
   case Mul: return "mul";
-  case Xxxx: return "xxx";
   case FMul: return "fmul";
   case UDiv: return "udiv";
   case SDiv: return "sdiv";
@@ -589,7 +588,6 @@ bool Instruction::isCommutative(unsigned op) {
   case Add:
   case FAdd:
   case Mul:
-  case Xxxx:
   case FMul:
   case And:
   case Or:
