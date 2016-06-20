@@ -593,17 +593,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="">
+    <list default="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/llvm.iml" afterPath="$PROJECT_DIR$/.idea/llvm.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" afterPath="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" afterPath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instruction.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instruction.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instructions.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
     </list>
     <ignored path="llvm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -627,7 +619,7 @@
       <file leaf-file-name="InstVisitor.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2951">
+            <state relative-caret-position="1005">
               <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
               <folding />
             </state>
@@ -637,7 +629,7 @@
       <file leaf-file-name="TargetLoweringBase.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="24825">
               <caret line="1655" column="39" selection-start-line="1655" selection-start-column="39" selection-end-line="1655" selection-end-column="39" />
               <folding />
             </state>
@@ -647,7 +639,7 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="1290">
               <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
@@ -659,9 +651,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
               <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
-              <folding>
-                <element signature="e#908#952#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -821,7 +811,7 @@
       <recent name="$PROJECT_DIR$/examples" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Fibonacc">
+  <component name="RunManager" selected="Application.check-all">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="check-all" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -3227,6 +3217,14 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="Fibonacci" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Fibonacc" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="Fibonacci" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="ADTTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="ADTTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="ADTTests" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -3308,14 +3306,6 @@
       <method />
     </configuration>
     <configuration default="false" name="UtilsTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="UtilsTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="UtilsTests" TEST_MODE="SUITE_TEST">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="Fibonacci" EXPLICIT_BUILD_TARGET_NAME="all">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Fibonacc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="Fibonacc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="Fibonacc">
       <envs />
       <method />
     </configuration>
@@ -3881,29 +3871,29 @@
       <item index="558" class="java.lang.String" itemvalue="Application.gtest_main" />
       <item index="559" class="java.lang.String" itemvalue="Application.yaml-bench" />
       <item index="560" class="java.lang.String" itemvalue="Application.Foo" />
-      <item index="561" class="java.lang.String" itemvalue="Google Test.ADTTests" />
-      <item index="562" class="java.lang.String" itemvalue="Google Test.AnalysisTests" />
-      <item index="563" class="java.lang.String" itemvalue="Google Test.AsmParserTests" />
-      <item index="564" class="java.lang.String" itemvalue="Google Test.BitcodeTests" />
-      <item index="565" class="java.lang.String" itemvalue="Google Test.CodeGenTests" />
-      <item index="566" class="java.lang.String" itemvalue="Google Test.DebugInfoDWARFTests" />
-      <item index="567" class="java.lang.String" itemvalue="Google Test.DebugInfoPDBTests" />
-      <item index="568" class="java.lang.String" itemvalue="Google Test.ExecutionEngineTests" />
-      <item index="569" class="java.lang.String" itemvalue="Google Test.MCJITTests" />
-      <item index="570" class="java.lang.String" itemvalue="Google Test.OrcJITTests" />
-      <item index="571" class="java.lang.String" itemvalue="Google Test.IRTests" />
-      <item index="572" class="java.lang.String" itemvalue="Google Test.LineEditorTests" />
-      <item index="573" class="java.lang.String" itemvalue="Google Test.LinkerTests" />
-      <item index="574" class="java.lang.String" itemvalue="Google Test.MCTests" />
-      <item index="575" class="java.lang.String" itemvalue="Google Test.MITests" />
-      <item index="576" class="java.lang.String" itemvalue="Google Test.ObjectYAMLTests" />
-      <item index="577" class="java.lang.String" itemvalue="Google Test.OptionTests" />
-      <item index="578" class="java.lang.String" itemvalue="Google Test.ProfileDataTests" />
-      <item index="579" class="java.lang.String" itemvalue="Google Test.SupportTests" />
-      <item index="580" class="java.lang.String" itemvalue="Google Test.IPOTests" />
-      <item index="581" class="java.lang.String" itemvalue="Google Test.UtilsTests" />
-      <item index="582" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="583" class="java.lang.String" itemvalue="Application.Fibonacc" />
+      <item index="561" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="562" class="java.lang.String" itemvalue="Application.Fibonacc" />
+      <item index="563" class="java.lang.String" itemvalue="Google Test.ADTTests" />
+      <item index="564" class="java.lang.String" itemvalue="Google Test.AnalysisTests" />
+      <item index="565" class="java.lang.String" itemvalue="Google Test.AsmParserTests" />
+      <item index="566" class="java.lang.String" itemvalue="Google Test.BitcodeTests" />
+      <item index="567" class="java.lang.String" itemvalue="Google Test.CodeGenTests" />
+      <item index="568" class="java.lang.String" itemvalue="Google Test.DebugInfoDWARFTests" />
+      <item index="569" class="java.lang.String" itemvalue="Google Test.DebugInfoPDBTests" />
+      <item index="570" class="java.lang.String" itemvalue="Google Test.ExecutionEngineTests" />
+      <item index="571" class="java.lang.String" itemvalue="Google Test.MCJITTests" />
+      <item index="572" class="java.lang.String" itemvalue="Google Test.OrcJITTests" />
+      <item index="573" class="java.lang.String" itemvalue="Google Test.IRTests" />
+      <item index="574" class="java.lang.String" itemvalue="Google Test.LineEditorTests" />
+      <item index="575" class="java.lang.String" itemvalue="Google Test.LinkerTests" />
+      <item index="576" class="java.lang.String" itemvalue="Google Test.MCTests" />
+      <item index="577" class="java.lang.String" itemvalue="Google Test.MITests" />
+      <item index="578" class="java.lang.String" itemvalue="Google Test.ObjectYAMLTests" />
+      <item index="579" class="java.lang.String" itemvalue="Google Test.OptionTests" />
+      <item index="580" class="java.lang.String" itemvalue="Google Test.ProfileDataTests" />
+      <item index="581" class="java.lang.String" itemvalue="Google Test.SupportTests" />
+      <item index="582" class="java.lang.String" itemvalue="Google Test.IPOTests" />
+      <item index="583" class="java.lang.String" itemvalue="Google Test.UtilsTests" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -3938,13 +3928,13 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25792813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5081043" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30963856" sideWeight="0.5024665" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5109232" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26024097" sideWeight="0.4918957" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26024097" sideWeight="0.48907682" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4027,7 +4017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4042,9 +4031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
           <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-          <folding>
-            <element signature="e#920#949#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4066,7 +4052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7200">
           <caret line="480" column="18" selection-start-line="480" selection-start-column="18" selection-end-line="480" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4103,7 +4088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4118,9 +4102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
           <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
-          <folding>
-            <element signature="e#920#949#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4170,9 +4151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-          <folding>
-            <element signature="e#920#949#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4194,7 +4172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4202,7 +4179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4210,7 +4186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4218,7 +4193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4226,9 +4200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="e#920#969#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4236,7 +4207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4244,7 +4214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4252,13 +4221,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="24825">
           <caret line="1655" column="39" selection-start-line="1655" selection-start-column="39" selection-end-line="1655" selection-end-column="39" />
           <folding />
         </state>
@@ -4268,7 +4236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="329" column="35" selection-start-line="329" selection-start-column="35" selection-end-line="329" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4276,7 +4243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="3012" column="35" selection-start-line="3012" selection-start-column="35" selection-end-line="3012" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4284,7 +4250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2445">
           <caret line="601" column="13" selection-start-line="601" selection-start-column="11" selection-end-line="601" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4292,13 +4257,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7704">
           <caret line="4213" column="48" selection-start-line="4213" selection-start-column="47" selection-end-line="4213" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2951">
+        <state relative-caret-position="1005">
           <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
           <folding />
         </state>
@@ -4308,7 +4272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31224">
           <caret line="104" column="21" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4316,7 +4279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="277" column="25" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4324,13 +4286,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="2153" column="46" selection-start-line="2153" selection-start-column="45" selection-end-line="2153" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="1290">
           <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
           <folding />
         </state>
@@ -4340,9 +4301,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
-          <folding>
-            <element signature="e#908#952#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
