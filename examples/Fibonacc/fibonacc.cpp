@@ -33,6 +33,12 @@
 #include "llvm/IR/Module.h"
 #include "llvm/Support/TargetSelect.h"
 #include "llvm/Support/raw_ostream.h"
+#include "llvm/IR/Function.h"
+#include "llvm/IR/PassManager.h"
+#include "llvm/IR/CallingConv.h"
+#include "llvm/PrintModulePass.h"
+#include "llvm/Support/IRBuilder.h"
+#include "llvm/Support/raw_ostream.h"
 
 using namespace llvm;
 
