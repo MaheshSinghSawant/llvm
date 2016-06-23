@@ -1971,6 +1971,7 @@ void BinaryOperator::init(BinaryOps iType) {
 #ifndef NDEBUG
   switch (iType) {
   case Add: case Sub:
+  case Fml:
   case Mul:
     assert(getType() == LHS->getType() &&
            "Arithmetic operation should return same type as operands!");

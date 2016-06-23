@@ -133,6 +133,7 @@ HANDLE_BINARY_INST(19, FDiv , BinaryOperator)
 HANDLE_BINARY_INST(20, URem , BinaryOperator)
 HANDLE_BINARY_INST(21, SRem , BinaryOperator)
 HANDLE_BINARY_INST(22, FRem , BinaryOperator)
+HANDLE_BINARY_INST(69, Fml  , BinaryOperator)
 
 // Logical operators (integer operands)
 HANDLE_BINARY_INST(23, Shl  , BinaryOperator) // Shift left  (logical)

@@ -687,6 +687,7 @@ public:
     /// *p = old + v
     Add,
     /// *p = old - v
+    Fml,
     Sub,
     /// *p = old & v
     And,

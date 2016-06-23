@@ -2992,6 +2992,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
   case lltok::kw_sub:
   case lltok::kw_fsub:
   case lltok::kw_mul:
+  case lltok::kw_fml:
   case lltok::kw_fmul:
   case lltok::kw_udiv:
   case lltok::kw_sdiv:
@@ -3009,7 +3010,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     Constant *Val0, *Val1;
     Lex.Lex();
     LocTy ModifierLoc = Lex.getLoc();
-    if (Opc == Instruction::Add || Opc == Instruction::Sub ||
+    if (Opc == Instruction::Add || Opc == Instruction::Sub || Opc == Instruction::Fml ||
         Opc == Instruction::Mul || Opc == Instruction::Shl) {
       if (EatIfPresent(lltok::kw_nuw))
         NUW = true;
@@ -3040,6 +3041,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     // Check that the type is valid for the operator.
     switch (Opc) {
     case Instruction::Add:
+    case Instruction::Fml:
     case Instruction::Sub:
     case Instruction::Mul:
     case Instruction::UDiv:
@@ -3193,6 +3195,251 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     ID.Kind = ValID::t_Constant;
     return false;
   }
+    case lltok::Eof:break;
+    case lltok::Error:break;
+    case lltok::dotdotdot:break;
+    case lltok::equal:break;
+    case lltok::comma:break;
+    case lltok::star:break;
+    case lltok::rsquare:break;
+    case lltok::rbrace:break;
+    case lltok::greater:break;
+    case lltok::lparen:break;
+    case lltok::rparen:break;
+    case lltok::exclaim:break;
+    case lltok::bar:break;
+    case lltok::kw_x:break;
+    case lltok::kw_declare:break;
+    case lltok::kw_define:break;
+    case lltok::kw_global:break;
+    case lltok::kw_constant:break;
+    case lltok::kw_private:break;
+    case lltok::kw_internal:break;
+    case lltok::kw_linkonce:break;
+    case lltok::kw_linkonce_odr:break;
+    case lltok::kw_weak:break;
+    case lltok::kw_weak_odr:break;
+    case lltok::kw_appending:break;
+    case lltok::kw_dllimport:break;
+    case lltok::kw_dllexport:break;
+    case lltok::kw_common:break;
+    case lltok::kw_available_externally:break;
+    case lltok::kw_default:break;
+    case lltok::kw_hidden:break;
+    case lltok::kw_protected:break;
+    case lltok::kw_unnamed_addr:break;
+    case lltok::kw_externally_initialized:break;
+    case lltok::kw_extern_weak:break;
+    case lltok::kw_external:break;
+    case lltok::kw_thread_local:break;
+    case lltok::kw_localdynamic:break;
+    case lltok::kw_initialexec:break;
+    case lltok::kw_localexec:break;
+    case lltok::kw_to:break;
+    case lltok::kw_caller:break;
+    case lltok::kw_within:break;
+    case lltok::kw_from:break;
+    case lltok::kw_tail:break;
+    case lltok::kw_musttail:break;
+    case lltok::kw_notail:break;
+    case lltok::kw_target:break;
+    case lltok::kw_triple:break;
+    case lltok::kw_source_filename:break;
+    case lltok::kw_unwind:break;
+    case lltok::kw_deplibs:break;
+    case lltok::kw_datalayout:break;
+    case lltok::kw_volatile:break;
+    case lltok::kw_atomic:break;
+    case lltok::kw_unordered:break;
+    case lltok::kw_monotonic:break;
+    case lltok::kw_acquire:break;
+    case lltok::kw_release:break;
+    case lltok::kw_acq_rel:break;
+    case lltok::kw_seq_cst:break;
+    case lltok::kw_singlethread:break;
+    case lltok::kw_nnan:break;
+    case lltok::kw_ninf:break;
+    case lltok::kw_nsz:break;
+    case lltok::kw_arcp:break;
+    case lltok::kw_fast:break;
+    case lltok::kw_nuw:break;
+    case lltok::kw_nsw:break;
+    case lltok::kw_exact:break;
+    case lltok::kw_inbounds:break;
+    case lltok::kw_align:break;
+    case lltok::kw_addrspace:break;
+    case lltok::kw_section:break;
+    case lltok::kw_alias:break;
+    case lltok::kw_ifunc:break;
+    case lltok::kw_module:break;
+    case lltok::kw_sideeffect:break;
+    case lltok::kw_alignstack:break;
+    case lltok::kw_inteldialect:break;
+    case lltok::kw_gc:break;
+    case lltok::kw_prefix:break;
+    case lltok::kw_prologue:break;
+    case lltok::kw_cc:break;
+    case lltok::kw_ccc:break;
+    case lltok::kw_fastcc:break;
+    case lltok::kw_coldcc:break;
+    case lltok::kw_intel_ocl_bicc:break;
+    case lltok::kw_x86_stdcallcc:break;
+    case lltok::kw_x86_fastcallcc:break;
+    case lltok::kw_x86_thiscallcc:break;
+    case lltok::kw_x86_vectorcallcc:break;
+    case lltok::kw_arm_apcscc:break;
+    case lltok::kw_arm_aapcscc:break;
+    case lltok::kw_arm_aapcs_vfpcc:break;
+    case lltok::kw_msp430_intrcc:break;
+    case lltok::kw_avr_intrcc:break;
+    case lltok::kw_avr_signalcc:break;
+    case lltok::kw_ptx_kernel:break;
+    case lltok::kw_ptx_device:break;
+    case lltok::kw_spir_kernel:break;
+    case lltok::kw_spir_func:break;
+    case lltok::kw_x86_64_sysvcc:break;
+    case lltok::kw_x86_64_win64cc:break;
+    case lltok::kw_webkit_jscc:break;
+    case lltok::kw_anyregcc:break;
+    case lltok::kw_swiftcc:break;
+    case lltok::kw_preserve_mostcc:break;
+    case lltok::kw_preserve_allcc:break;
+    case lltok::kw_ghccc:break;
+    case lltok::kw_x86_intrcc:break;
+    case lltok::kw_hhvmcc:break;
+    case lltok::kw_hhvm_ccc:break;
+    case lltok::kw_cxx_fast_tlscc:break;
+    case lltok::kw_amdgpu_vs:break;
+    case lltok::kw_amdgpu_gs:break;
+    case lltok::kw_amdgpu_ps:break;
+    case lltok::kw_amdgpu_cs:break;
+    case lltok::kw_attributes:break;
+    case lltok::kw_allocsize:break;
+    case lltok::kw_alwaysinline:break;
+    case lltok::kw_argmemonly:break;
+    case lltok::kw_sanitize_address:break;
+    case lltok::kw_builtin:break;
+    case lltok::kw_byval:break;
+    case lltok::kw_inalloca:break;
+    case lltok::kw_cold:break;
+    case lltok::kw_convergent:break;
+    case lltok::kw_dereferenceable:break;
+    case lltok::kw_dereferenceable_or_null:break;
+    case lltok::kw_inaccessiblememonly:break;
+    case lltok::kw_inaccessiblemem_or_argmemonly:break;
+    case lltok::kw_inlinehint:break;
+    case lltok::kw_inreg:break;
+    case lltok::kw_jumptable:break;
+    case lltok::kw_minsize:break;
+    case lltok::kw_naked:break;
+    case lltok::kw_nest:break;
+    case lltok::kw_noalias:break;
+    case lltok::kw_nobuiltin:break;
+    case lltok::kw_nocapture:break;
+    case lltok::kw_noduplicate:break;
+    case lltok::kw_noimplicitfloat:break;
+    case lltok::kw_noinline:break;
+    case lltok::kw_norecurse:break;
+    case lltok::kw_nonlazybind:break;
+    case lltok::kw_nonnull:break;
+    case lltok::kw_noredzone:break;
+    case lltok::kw_noreturn:break;
+    case lltok::kw_nounwind:break;
+    case lltok::kw_optnone:break;
+    case lltok::kw_optsize:break;
+    case lltok::kw_readnone:break;
+    case lltok::kw_readonly:break;
+    case lltok::kw_returned:break;
+    case lltok::kw_returns_twice:break;
+    case lltok::kw_signext:break;
+    case lltok::kw_ssp:break;
+    case lltok::kw_sspreq:break;
+    case lltok::kw_sspstrong:break;
+    case lltok::kw_safestack:break;
+    case lltok::kw_sret:break;
+    case lltok::kw_sanitize_thread:break;
+    case lltok::kw_sanitize_memory:break;
+    case lltok::kw_swifterror:break;
+    case lltok::kw_swiftself:break;
+    case lltok::kw_uwtable:break;
+    case lltok::kw_zeroext:break;
+    case lltok::kw_type:break;
+    case lltok::kw_opaque:break;
+    case lltok::kw_comdat:break;
+    case lltok::kw_any:break;
+    case lltok::kw_exactmatch:break;
+    case lltok::kw_largest:break;
+    case lltok::kw_noduplicates:break;
+    case lltok::kw_samesize:break;
+    case lltok::kw_eq:break;
+    case lltok::kw_ne:break;
+    case lltok::kw_slt:break;
+    case lltok::kw_sgt:break;
+    case lltok::kw_sle:break;
+    case lltok::kw_sge:break;
+    case lltok::kw_ult:break;
+    case lltok::kw_ugt:break;
+    case lltok::kw_ule:break;
+    case lltok::kw_uge:break;
+    case lltok::kw_oeq:break;
+    case lltok::kw_one:break;
+    case lltok::kw_olt:break;
+    case lltok::kw_ogt:break;
+    case lltok::kw_ole:break;
+    case lltok::kw_oge:break;
+    case lltok::kw_ord:break;
+    case lltok::kw_uno:break;
+    case lltok::kw_ueq:break;
+    case lltok::kw_une:break;
+    case lltok::kw_xchg:break;
+    case lltok::kw_nand:break;
+    case lltok::kw_max:break;
+    case lltok::kw_min:break;
+    case lltok::kw_umax:break;
+    case lltok::kw_umin:break;
+    case lltok::kw_phi:break;
+    case lltok::kw_call:break;
+    case lltok::kw_va_arg:break;
+    case lltok::kw_landingpad:break;
+    case lltok::kw_personality:break;
+    case lltok::kw_cleanup:break;
+    case lltok::kw_catch:break;
+    case lltok::kw_filter:break;
+    case lltok::kw_ret:break;
+    case lltok::kw_br:break;
+    case lltok::kw_switch:break;
+    case lltok::kw_indirectbr:break;
+    case lltok::kw_invoke:break;
+    case lltok::kw_resume:break;
+    case lltok::kw_unreachable:break;
+    case lltok::kw_cleanupret:break;
+    case lltok::kw_catchswitch:break;
+    case lltok::kw_catchret:break;
+    case lltok::kw_catchpad:break;
+    case lltok::kw_cleanuppad:break;
+    case lltok::kw_alloca:break;
+    case lltok::kw_load:break;
+    case lltok::kw_store:break;
+    case lltok::kw_fence:break;
+    case lltok::kw_cmpxchg:break;
+    case lltok::kw_atomicrmw:break;
+    case lltok::kw_distinct:break;
+    case lltok::kw_uselistorder:break;
+    case lltok::kw_uselistorder_bb:break;
+    case lltok::AttrGrpID:break;
+    case lltok::LabelStr:break;
+    case lltok::ComdatVar:break;
+    case lltok::MetadataVar:break;
+    case lltok::StringConstant:break;
+    case lltok::DwarfTag:break;
+    case lltok::DwarfAttEncoding:break;
+    case lltok::DwarfVirtuality:break;
+    case lltok::DwarfLang:break;
+    case lltok::EmissionKind:break;
+    case lltok::DwarfOp:break;
+    case lltok::DIFlag:break;
+    case lltok::DwarfMacinfo:break;
+    case lltok::Type:break;
   }
 
   Lex.Lex();
@@ -4891,6 +5138,7 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
   case lltok::kw_cleanuppad:  return ParseCleanupPad(Inst, PFS);
   // Binary Operators.
   case lltok::kw_add:
+  case lltok::kw_fml:
   case lltok::kw_sub:
   case lltok::kw_mul:
   case lltok::kw_shl: {
@@ -6099,6 +6347,7 @@ int LLParser::ParseAtomicRMW(Instruction *&Inst, PerFunctionState &PFS) {
   default: return TokError("expected binary operation in atomicrmw");
   case lltok::kw_xchg: Operation = AtomicRMWInst::Xchg; break;
   case lltok::kw_add: Operation = AtomicRMWInst::Add; break;
+  case lltok::kw_fml: Operation = AtomicRMWInst::Fml; break;
   case lltok::kw_sub: Operation = AtomicRMWInst::Sub; break;
   case lltok::kw_and: Operation = AtomicRMWInst::And; break;
   case lltok::kw_nand: Operation = AtomicRMWInst::Nand; break;

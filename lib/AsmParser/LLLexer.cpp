@@ -726,7 +726,7 @@ lltok::Kind LLLexer::LexIdentifier() {
     }                                                                          \
   } while (false)
 
-  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);
+  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);  INSTKEYWORD(fml,   Fml);
   INSTKEYWORD(sub,   Sub);  INSTKEYWORD(fsub,   FSub);
   INSTKEYWORD(mul,   Mul);  INSTKEYWORD(fmul,   FMul);
   INSTKEYWORD(udiv,  UDiv); INSTKEYWORD(sdiv,  SDiv); INSTKEYWORD(fdiv,  FDiv);

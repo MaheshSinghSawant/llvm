@@ -273,6 +273,7 @@ const char *Instruction::getOpcodeName(unsigned OpCode) {
   // Standard binary operators...
   case Add: return "add";
   case FAdd: return "fadd";
+  case Fml: return "fml";
   case Sub: return "sub";
   case FSub: return "fsub";
   case Mul: return "mul";
@@ -559,7 +560,7 @@ bool Instruction::mayReturn() const {
 ///
 bool Instruction::isAssociative(unsigned Opcode) {
   return Opcode == And || Opcode == Or || Opcode == Xor ||
-         Opcode == Add || Opcode == And || Opcode == Mul;
+         Opcode == Add || Opcode == And || Opcode == Fml || Opcode == Mul;
 }
 
 bool Instruction::isAssociative() const {
@@ -587,6 +588,7 @@ bool Instruction::isCommutative(unsigned op) {
   switch (op) {
   case Add:
   case FAdd:
+  case Fml:
   case Mul:
   case FMul:
   case And:
