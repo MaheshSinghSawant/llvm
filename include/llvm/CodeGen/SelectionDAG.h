@@ -1131,6 +1131,7 @@ public:
     // target info.
     switch (Opcode) {
     case ISD::ADD:
+    case ISD::FML:
     case ISD::SMIN:
     case ISD::SMAX:
     case ISD::UMIN:

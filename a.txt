@@ -1,0 +1,1130 @@
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+index 4262eff..8461d69 100644
+--- a/.idea/workspace.xml
++++ b/.idea/workspace.xml
+@@ -594,8 +594,16 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="">
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/llvm.iml" afterPath="$PROJECT_DIR$/.idea/llvm.iml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm-c/Core.h" afterPath="$PROJECT_DIR$/include/llvm-c/Core.h" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" afterPath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/Instructions.h" afterPath="$PROJECT_DIR$/include/llvm/IR/Instructions.h" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" afterPath="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" afterPath="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instruction.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instruction.cpp" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/IR/Instructions.cpp" afterPath="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
+     </list>
+     <ignored path="llvm.iws" />
+     <ignored path=".idea/workspace.xml" />
+@@ -619,43 +627,105 @@
+       <file leaf-file-name="InstVisitor.h" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="1005">
+-              <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
++            <state relative-caret-position="2411">
++              <caret line="237" column="31" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="31" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="TargetLoweringBase.cpp" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
++      <file leaf-file-name="BitcodeReader.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="24825">
+-              <caret line="1655" column="39" selection-start-line="1655" selection-start-column="39" selection-end-line="1655" selection-end-column="39" />
++            <state relative-caret-position="-30928">
++              <caret line="4208" column="35" selection-start-line="4208" selection-start-column="32" selection-end-line="4208" selection-end-column="35" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
++      <file leaf-file-name="BitcodeWriter.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="1290">
+-              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
++            <state relative-caret-position="339">
++              <caret line="114" column="47" selection-start-line="114" selection-start-column="47" selection-end-line="114" selection-end-column="47" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="Instruction.def" pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
++      <file leaf-file-name="Instruction.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="364">
+-              <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
++            <state relative-caret-position="240">
++              <caret line="278" column="10" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="10" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
++      <file leaf-file-name="Instructions.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="399">
++              <caret line="1975" column="12" selection-start-line="1975" selection-start-column="12" selection-end-line="1975" selection-end-column="12" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Core.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/IR/Core.cpp">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="210">
++              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Core.h" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/include/llvm-c/Core.h">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="240">
++              <caret line="355" column="22" selection-start-line="355" selection-start-column="17" selection-end-line="355" selection-end-column="22" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="ExtendingLLVM.rst" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/docs/ExtendingLLVM.rst">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="0">
++              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Parser.cpp" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/lib/AsmParser/Parser.cpp">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-1014">
++              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Instruction.h" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="188">
++              <caret line="271" column="42" selection-start-line="271" selection-start-column="39" selection-end-line="271" selection-end-column="42" />
++              <folding>
++                <element signature="e#615#645#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
+     </leaf>
+   </component>
+   <component name="Git.Settings">
+@@ -674,15 +744,17 @@
+         <option value="$PROJECT_DIR$/examples/CMakeLists.txt" />
+         <option value="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
+         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+-        <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
+         <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.h" />
+         <option value="$PROJECT_DIR$/include/llvm/IR/InstVisitor.h" />
+-        <option value="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
++        <option value="$PROJECT_DIR$/include/llvm/IR/Instructions.h" />
+         <option value="$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp" />
++        <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
++        <option value="$PROJECT_DIR$/lib/AsmParser/LLParser.cpp" />
+         <option value="$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp" />
+         <option value="$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp" />
+         <option value="$PROJECT_DIR$/lib/IR/Instruction.cpp" />
+         <option value="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
++        <option value="$PROJECT_DIR$/include/llvm-c/Core.h" />
+       </list>
+     </option>
+   </component>
+@@ -752,22 +824,8 @@
+               <option name="myItemId" value="include" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="llvm" />
+-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="llvm" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="include" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="llvm" />
++              <option name="myItemId" value="llvm-c" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -784,14 +842,6 @@
+               <option name="myItemId" value="include" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="llvm" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="IR" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+         </subPane>
+       </pane>
+@@ -3926,15 +3976,16 @@
+     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+     <editor active="true" />
+     <layout>
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25792813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32064834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
+-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="7" side_tool="true" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30963856" sideWeight="0.5024665" order="10" side_tool="true" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33830845" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="9" side_tool="true" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26024097" sideWeight="0.48907682" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25421688" sideWeight="0.48907682" order="5" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+@@ -3942,28 +3993,27 @@
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32771084" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+     </layout>
+     <layout-to-restore>
+-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="7" side_tool="true" content_ui="tabs" />
++      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
++      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30963856" sideWeight="0.5024665" order="10" side_tool="true" content_ui="tabs" />
++      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="9" side_tool="true" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25421688" sideWeight="0.48907682" order="5" side_tool="false" content_ui="tabs" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
++      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+     </layout-to-restore>
+   </component>
+   <component name="Vcs.Log.UiProperties">
+@@ -3979,7 +4029,7 @@
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+-      <option name="time" value="28" />
++      <option name="time" value="30" />
+     </breakpoint-manager>
+     <watches-manager />
+   </component>
+@@ -4048,259 +4098,282 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
++    <entry file="file://$PROJECT_DIR$/examples/ModuleMaker/ModuleMaker.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="7200">
+-          <caret line="480" column="18" selection-start-line="480" selection-start-column="18" selection-end-line="480" selection-end-column="18" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
++    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/Chapter8/toy.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="3555">
+-          <caret line="237" column="21" selection-start-line="237" selection-start-column="21" selection-end-line="237" selection-end-column="21" />
+-          <folding />
++        <state relative-caret-position="6180">
++          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
++    <entry file="file://$PROJECT_DIR$/hell" />
++    <entry file="file://$PROJECT_DIR$/hell.ll" />
++    <entry file="file://$PROJECT_DIR$/hell.bc" />
++    <entry file="file://$PROJECT_DIR$/hell.c" />
++    <entry file="file://$PROJECT_DIR$/examples/fibonacci.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
++        <state relative-caret-position="-14">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
++    <entry file="file://$PROJECT_DIR$/BrainF.cpp" />
++    <entry file="file://$PROJECT_DIR$/examples/KalMeMaybe/KalMeMaybe.cpp" />
++    <entry file="file://$PROJECT_DIR$/BrainF/BrainF.h" />
++    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/CMakeLists.txt">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="225">
++          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/examples/CMakeCache.txt">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
++    <entry file="file://$PROJECT_DIR$/examples/BrainF/BrainF.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="10920">
+-          <caret line="728" column="17" selection-start-line="728" selection-start-column="14" selection-end-line="728" selection-end-column="17" />
++        <state relative-caret-position="375">
++          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="75">
++          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
++    <entry file="file://$PROJECT_DIR$/examples/Foo/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="135">
++          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/fibonacci.cpp">
++    <entry file="file://$PROJECT_DIR$/examples/Foo/foo2.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1695">
+-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
++        <state relative-caret-position="195">
++          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/Chapter8/toy.cpp">
++    <entry file="file://$PROJECT_DIR$/CODE_OWNERS.TXT">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/ModuleMaker/ModuleMaker.cpp">
++    <entry file="file://$PROJECT_DIR$/examples/Fibonacc/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="135">
++          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/ModuleMaker/ModuleMaker.cpp">
++    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="120">
++          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/Chapter8/toy.cpp">
++    <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="6180">
+-          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
++        <state relative-caret-position="24825">
++          <caret line="1655" column="39" selection-start-line="1655" selection-start-column="39" selection-end-line="1655" selection-end-column="39" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/hell" />
+-    <entry file="file://$PROJECT_DIR$/hell.ll" />
+-    <entry file="file://$PROJECT_DIR$/hell.bc" />
+-    <entry file="file://$PROJECT_DIR$/hell.c" />
+-    <entry file="file://$PROJECT_DIR$/examples/fibonacci.cpp">
++    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-14">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="1290">
++          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/BrainF.cpp" />
+-    <entry file="file://$PROJECT_DIR$/examples/KalMeMaybe/KalMeMaybe.cpp" />
+-    <entry file="file://$PROJECT_DIR$/BrainF/BrainF.h" />
+     <entry file="file://$PROJECT_DIR$/examples/Fibonacci/fibonacci.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1170">
++        <state relative-caret-position="1545">
+           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
++          <folding>
++            <element signature="e#920#949#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/examples/Fibonacc/fibonacc.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="225">
+-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
++        <state relative-caret-position="495">
++          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/CMakeCache.txt">
++    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="60">
++          <caret line="4" column="67" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="67" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/BrainF/BrainF.cpp">
++    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLVMBuild.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="375">
+-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/include/llvm/Bitcode/LLVMBitCodes.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
++        <state relative-caret-position="392">
++          <caret line="333" column="15" selection-start-line="333" selection-start-column="15" selection-end-line="333" selection-end-column="15" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Fibonacc/fibonacc.cpp">
++    <entry file="file://$PROJECT_DIR$/lib/CodeGen/AsmPrinter/AsmPrinter.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="339">
+-          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Foo/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/lib/AsmParser/CMakeLists.txt">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="135">
+-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Foo/foo2.cpp">
++    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="195">
+-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
++        <state relative-caret-position="188">
++          <caret line="271" column="42" selection-start-line="271" selection-start-column="39" selection-end-line="271" selection-end-column="42" />
++          <folding>
++            <element signature="e#615#645#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/CODE_OWNERS.TXT">
++    <entry file="file://$PROJECT_DIR$/lib/AsmParser/Parser.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
++        <state relative-caret-position="-1014">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Fibonacc/CMakeLists.txt">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="135">
+-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instructions.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="120">
+-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
++        <state relative-caret-position="-51">
++          <caret line="667" column="77" selection-start-line="667" selection-start-column="77" selection-end-line="667" selection-end-column="77" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
++    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="24825">
+-          <caret line="1655" column="39" selection-start-line="1655" selection-start-column="39" selection-end-line="1655" selection-end-column="39" />
++        <state relative-caret-position="2025">
++          <caret line="135" column="19" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
++    <entry file="file://$PROJECT_DIR$/docs/ExtendingLLVM.rst">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="66">
+-          <caret line="329" column="35" selection-start-line="329" selection-start-column="35" selection-end-line="329" selection-end-column="35" />
++        <state relative-caret-position="0">
++          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLParser.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="186">
+-          <caret line="3012" column="35" selection-start-line="3012" selection-start-column="35" selection-end-line="3012" selection-end-column="35" />
++        <state relative-caret-position="285">
++          <caret line="6349" column="50" selection-start-line="6349" selection-start-column="50" selection-end-line="6349" selection-end-column="50" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-2445">
+-          <caret line="601" column="13" selection-start-line="601" selection-start-column="11" selection-end-line="601" selection-end-column="13" />
++        <state relative-caret-position="-3615">
++          <caret line="731" column="44" selection-start-line="731" selection-start-column="40" selection-end-line="731" selection-end-column="44" />
++          <folding>
++            <element signature="e#467#487#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
++    <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-7704">
+-          <caret line="4213" column="48" selection-start-line="4213" selection-start-column="47" selection-end-line="4213" selection-end-column="48" />
++        <state relative-caret-position="2411">
++          <caret line="237" column="31" selection-start-line="237" selection-start-column="28" selection-end-line="237" selection-end-column="31" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
++    <entry file="file://$PROJECT_DIR$/lib/Bitcode/Reader/BitcodeReader.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1005">
+-          <caret line="67" column="16" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="16" />
++        <state relative-caret-position="-30928">
++          <caret line="4208" column="35" selection-start-line="4208" selection-start-column="32" selection-end-line="4208" selection-end-column="35" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/lib/Bitcode/Writer/BitcodeWriter.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-31224">
+-          <caret line="104" column="21" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="21" />
++        <state relative-caret-position="339">
++          <caret line="114" column="47" selection-start-line="114" selection-start-column="47" selection-end-line="114" selection-end-column="47" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="171">
+-          <caret line="277" column="25" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
++        <state relative-caret-position="240">
++          <caret line="278" column="10" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="10" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/lib/IR/Instructions.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="186">
+-          <caret line="2153" column="46" selection-start-line="2153" selection-start-column="45" selection-end-line="2153" selection-end-column="46" />
++        <state relative-caret-position="399">
++          <caret line="1975" column="12" selection-start-line="1975" selection-start-column="12" selection-end-line="1975" selection-end-column="12" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
++    <entry file="file://$PROJECT_DIR$/lib/IR/Core.cpp">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1290">
+-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
++        <state relative-caret-position="210">
++          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
++    <entry file="file://$PROJECT_DIR$/include/llvm-c/Core.h">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="364">
+-          <caret line="142" column="24" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="24" />
++        <state relative-caret-position="240">
++          <caret line="355" column="22" selection-start-line="355" selection-start-column="17" selection-end-line="355" selection-end-column="22" />
+           <folding />
+         </state>
+       </provider>
+diff --git a/include/llvm-c/Core.h b/include/llvm-c/Core.h
+index 0c3d76d..7062588 100644
+--- a/include/llvm-c/Core.h
++++ b/include/llvm-c/Core.h
+@@ -112,6 +112,7 @@ typedef enum {
+   /* Standard Binary Operators */
+   LLVMAdd            = 8,
+   LLVMFAdd           = 9,
++  LLVMFml            = 69,
+   LLVMSub            = 10,
+   LLVMFSub           = 11,
+   LLVMMul            = 12,
+@@ -354,6 +355,7 @@ typedef enum {
+ typedef enum {
+     LLVMAtomicRMWBinOpXchg, /**< Set the new value and return the one old */
+     LLVMAtomicRMWBinOpAdd, /**< Add a value and return the old one */
++    LLVMAtomicRMWBinOpFml, /**< Add a value and return the old one */
+     LLVMAtomicRMWBinOpSub, /**< Subtract a value and return the old one */
+     LLVMAtomicRMWBinOpAnd, /**< And a value and return the old one */
+     LLVMAtomicRMWBinOpNand, /**< Not-And a value and return the old one */
+@@ -1684,6 +1686,7 @@ LLVMValueRef LLVMConstNUWNeg(LLVMValueRef ConstantVal);
+ LLVMValueRef LLVMConstFNeg(LLVMValueRef ConstantVal);
+ LLVMValueRef LLVMConstNot(LLVMValueRef ConstantVal);
+ LLVMValueRef LLVMConstAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
++LLVMValueRef LLVMConstFml(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
+ LLVMValueRef LLVMConstNSWAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
+ LLVMValueRef LLVMConstNUWAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
+ LLVMValueRef LLVMConstFAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
+@@ -2851,6 +2854,8 @@ void LLVMSetCleanup(LLVMValueRef LandingPad, LLVMBool Val);
+ /* Arithmetic */
+ LLVMValueRef LLVMBuildAdd(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
+                           const char *Name);
++LLVMValueRef LLVMBuildFml(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
++                          const char *Name);
+ LLVMValueRef LLVMBuildNSWAdd(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
+                              const char *Name);
+ LLVMValueRef LLVMBuildNUWAdd(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
+diff --git a/include/llvm/IR/Instruction.def b/include/llvm/IR/Instruction.def
+index 18711ab..7b724a2 100644
+--- a/include/llvm/IR/Instruction.def
++++ b/include/llvm/IR/Instruction.def
+@@ -133,6 +133,7 @@ HANDLE_BINARY_INST(19, FDiv , BinaryOperator)
+ HANDLE_BINARY_INST(20, URem , BinaryOperator)
+ HANDLE_BINARY_INST(21, SRem , BinaryOperator)
+ HANDLE_BINARY_INST(22, FRem , BinaryOperator)
++HANDLE_BINARY_INST(69, Fml  , BinaryOperator)
+ 
+ // Logical operators (integer operands)
+ HANDLE_BINARY_INST(23, Shl  , BinaryOperator) // Shift left  (logical)
+diff --git a/include/llvm/IR/Instructions.h b/include/llvm/IR/Instructions.h
+index 63175ed..b6074e0 100644
+--- a/include/llvm/IR/Instructions.h
++++ b/include/llvm/IR/Instructions.h
+@@ -687,6 +687,7 @@ public:
+     /// *p = old + v
+     Add,
+     /// *p = old - v
++    Fml,
+     Sub,
+     /// *p = old & v
+     And,
+diff --git a/lib/AsmParser/LLLexer.cpp b/lib/AsmParser/LLLexer.cpp
+index 16a5d3c..4c56110 100644
+--- a/lib/AsmParser/LLLexer.cpp
++++ b/lib/AsmParser/LLLexer.cpp
+@@ -726,7 +726,7 @@ lltok::Kind LLLexer::LexIdentifier() {
+     }                                                                          \
+   } while (false)
+ 
+-  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);
++  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);  INSTKEYWORD(fml,   Fml);
+   INSTKEYWORD(sub,   Sub);  INSTKEYWORD(fsub,   FSub);
+   INSTKEYWORD(mul,   Mul);  INSTKEYWORD(fmul,   FMul);
+   INSTKEYWORD(udiv,  UDiv); INSTKEYWORD(sdiv,  SDiv); INSTKEYWORD(fdiv,  FDiv);
+diff --git a/lib/AsmParser/LLParser.cpp b/lib/AsmParser/LLParser.cpp
+index d9b7f3e..c024d69 100644
+--- a/lib/AsmParser/LLParser.cpp
++++ b/lib/AsmParser/LLParser.cpp
+@@ -2992,6 +2992,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
+   case lltok::kw_sub:
+   case lltok::kw_fsub:
+   case lltok::kw_mul:
++  case lltok::kw_fml:
+   case lltok::kw_fmul:
+   case lltok::kw_udiv:
+   case lltok::kw_sdiv:
+@@ -3009,7 +3010,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
+     Constant *Val0, *Val1;
+     Lex.Lex();
+     LocTy ModifierLoc = Lex.getLoc();
+-    if (Opc == Instruction::Add || Opc == Instruction::Sub ||
++    if (Opc == Instruction::Add || Opc == Instruction::Sub || Opc == Instruction::Fml ||
+         Opc == Instruction::Mul || Opc == Instruction::Shl) {
+       if (EatIfPresent(lltok::kw_nuw))
+         NUW = true;
+@@ -3040,6 +3041,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
+     // Check that the type is valid for the operator.
+     switch (Opc) {
+     case Instruction::Add:
++    case Instruction::Fml:
+     case Instruction::Sub:
+     case Instruction::Mul:
+     case Instruction::UDiv:
+@@ -3193,6 +3195,251 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
+     ID.Kind = ValID::t_Constant;
+     return false;
+   }
++    case lltok::Eof:break;
++    case lltok::Error:break;
++    case lltok::dotdotdot:break;
++    case lltok::equal:break;
++    case lltok::comma:break;
++    case lltok::star:break;
++    case lltok::rsquare:break;
++    case lltok::rbrace:break;
++    case lltok::greater:break;
++    case lltok::lparen:break;
++    case lltok::rparen:break;
++    case lltok::exclaim:break;
++    case lltok::bar:break;
++    case lltok::kw_x:break;
++    case lltok::kw_declare:break;
++    case lltok::kw_define:break;
++    case lltok::kw_global:break;
++    case lltok::kw_constant:break;
++    case lltok::kw_private:break;
++    case lltok::kw_internal:break;
++    case lltok::kw_linkonce:break;
++    case lltok::kw_linkonce_odr:break;
++    case lltok::kw_weak:break;
++    case lltok::kw_weak_odr:break;
++    case lltok::kw_appending:break;
++    case lltok::kw_dllimport:break;
++    case lltok::kw_dllexport:break;
++    case lltok::kw_common:break;
++    case lltok::kw_available_externally:break;
++    case lltok::kw_default:break;
++    case lltok::kw_hidden:break;
++    case lltok::kw_protected:break;
++    case lltok::kw_unnamed_addr:break;
++    case lltok::kw_externally_initialized:break;
++    case lltok::kw_extern_weak:break;
++    case lltok::kw_external:break;
++    case lltok::kw_thread_local:break;
++    case lltok::kw_localdynamic:break;
++    case lltok::kw_initialexec:break;
++    case lltok::kw_localexec:break;
++    case lltok::kw_to:break;
++    case lltok::kw_caller:break;
++    case lltok::kw_within:break;
++    case lltok::kw_from:break;
++    case lltok::kw_tail:break;
++    case lltok::kw_musttail:break;
++    case lltok::kw_notail:break;
++    case lltok::kw_target:break;
++    case lltok::kw_triple:break;
++    case lltok::kw_source_filename:break;
++    case lltok::kw_unwind:break;
++    case lltok::kw_deplibs:break;
++    case lltok::kw_datalayout:break;
++    case lltok::kw_volatile:break;
++    case lltok::kw_atomic:break;
++    case lltok::kw_unordered:break;
++    case lltok::kw_monotonic:break;
++    case lltok::kw_acquire:break;
++    case lltok::kw_release:break;
++    case lltok::kw_acq_rel:break;
++    case lltok::kw_seq_cst:break;
++    case lltok::kw_singlethread:break;
++    case lltok::kw_nnan:break;
++    case lltok::kw_ninf:break;
++    case lltok::kw_nsz:break;
++    case lltok::kw_arcp:break;
++    case lltok::kw_fast:break;
++    case lltok::kw_nuw:break;
++    case lltok::kw_nsw:break;
++    case lltok::kw_exact:break;
++    case lltok::kw_inbounds:break;
++    case lltok::kw_align:break;
++    case lltok::kw_addrspace:break;
++    case lltok::kw_section:break;
++    case lltok::kw_alias:break;
++    case lltok::kw_ifunc:break;
++    case lltok::kw_module:break;
++    case lltok::kw_sideeffect:break;
++    case lltok::kw_alignstack:break;
++    case lltok::kw_inteldialect:break;
++    case lltok::kw_gc:break;
++    case lltok::kw_prefix:break;
++    case lltok::kw_prologue:break;
++    case lltok::kw_cc:break;
++    case lltok::kw_ccc:break;
++    case lltok::kw_fastcc:break;
++    case lltok::kw_coldcc:break;
++    case lltok::kw_intel_ocl_bicc:break;
++    case lltok::kw_x86_stdcallcc:break;
++    case lltok::kw_x86_fastcallcc:break;
++    case lltok::kw_x86_thiscallcc:break;
++    case lltok::kw_x86_vectorcallcc:break;
++    case lltok::kw_arm_apcscc:break;
++    case lltok::kw_arm_aapcscc:break;
++    case lltok::kw_arm_aapcs_vfpcc:break;
++    case lltok::kw_msp430_intrcc:break;
++    case lltok::kw_avr_intrcc:break;
++    case lltok::kw_avr_signalcc:break;
++    case lltok::kw_ptx_kernel:break;
++    case lltok::kw_ptx_device:break;
++    case lltok::kw_spir_kernel:break;
++    case lltok::kw_spir_func:break;
++    case lltok::kw_x86_64_sysvcc:break;
++    case lltok::kw_x86_64_win64cc:break;
++    case lltok::kw_webkit_jscc:break;
++    case lltok::kw_anyregcc:break;
++    case lltok::kw_swiftcc:break;
++    case lltok::kw_preserve_mostcc:break;
++    case lltok::kw_preserve_allcc:break;
++    case lltok::kw_ghccc:break;
++    case lltok::kw_x86_intrcc:break;
++    case lltok::kw_hhvmcc:break;
++    case lltok::kw_hhvm_ccc:break;
++    case lltok::kw_cxx_fast_tlscc:break;
++    case lltok::kw_amdgpu_vs:break;
++    case lltok::kw_amdgpu_gs:break;
++    case lltok::kw_amdgpu_ps:break;
++    case lltok::kw_amdgpu_cs:break;
++    case lltok::kw_attributes:break;
++    case lltok::kw_allocsize:break;
++    case lltok::kw_alwaysinline:break;
++    case lltok::kw_argmemonly:break;
++    case lltok::kw_sanitize_address:break;
++    case lltok::kw_builtin:break;
++    case lltok::kw_byval:break;
++    case lltok::kw_inalloca:break;
++    case lltok::kw_cold:break;
++    case lltok::kw_convergent:break;
++    case lltok::kw_dereferenceable:break;
++    case lltok::kw_dereferenceable_or_null:break;
++    case lltok::kw_inaccessiblememonly:break;
++    case lltok::kw_inaccessiblemem_or_argmemonly:break;
++    case lltok::kw_inlinehint:break;
++    case lltok::kw_inreg:break;
++    case lltok::kw_jumptable:break;
++    case lltok::kw_minsize:break;
++    case lltok::kw_naked:break;
++    case lltok::kw_nest:break;
++    case lltok::kw_noalias:break;
++    case lltok::kw_nobuiltin:break;
++    case lltok::kw_nocapture:break;
++    case lltok::kw_noduplicate:break;
++    case lltok::kw_noimplicitfloat:break;
++    case lltok::kw_noinline:break;
++    case lltok::kw_norecurse:break;
++    case lltok::kw_nonlazybind:break;
++    case lltok::kw_nonnull:break;
++    case lltok::kw_noredzone:break;
++    case lltok::kw_noreturn:break;
++    case lltok::kw_nounwind:break;
++    case lltok::kw_optnone:break;
++    case lltok::kw_optsize:break;
++    case lltok::kw_readnone:break;
++    case lltok::kw_readonly:break;
++    case lltok::kw_returned:break;
++    case lltok::kw_returns_twice:break;
++    case lltok::kw_signext:break;
++    case lltok::kw_ssp:break;
++    case lltok::kw_sspreq:break;
++    case lltok::kw_sspstrong:break;
++    case lltok::kw_safestack:break;
++    case lltok::kw_sret:break;
++    case lltok::kw_sanitize_thread:break;
++    case lltok::kw_sanitize_memory:break;
++    case lltok::kw_swifterror:break;
++    case lltok::kw_swiftself:break;
++    case lltok::kw_uwtable:break;
++    case lltok::kw_zeroext:break;
++    case lltok::kw_type:break;
++    case lltok::kw_opaque:break;
++    case lltok::kw_comdat:break;
++    case lltok::kw_any:break;
++    case lltok::kw_exactmatch:break;
++    case lltok::kw_largest:break;
++    case lltok::kw_noduplicates:break;
++    case lltok::kw_samesize:break;
++    case lltok::kw_eq:break;
++    case lltok::kw_ne:break;
++    case lltok::kw_slt:break;
++    case lltok::kw_sgt:break;
++    case lltok::kw_sle:break;
++    case lltok::kw_sge:break;
++    case lltok::kw_ult:break;
++    case lltok::kw_ugt:break;
++    case lltok::kw_ule:break;
++    case lltok::kw_uge:break;
++    case lltok::kw_oeq:break;
++    case lltok::kw_one:break;
++    case lltok::kw_olt:break;
++    case lltok::kw_ogt:break;
++    case lltok::kw_ole:break;
++    case lltok::kw_oge:break;
++    case lltok::kw_ord:break;
++    case lltok::kw_uno:break;
++    case lltok::kw_ueq:break;
++    case lltok::kw_une:break;
++    case lltok::kw_xchg:break;
++    case lltok::kw_nand:break;
++    case lltok::kw_max:break;
++    case lltok::kw_min:break;
++    case lltok::kw_umax:break;
++    case lltok::kw_umin:break;
++    case lltok::kw_phi:break;
++    case lltok::kw_call:break;
++    case lltok::kw_va_arg:break;
++    case lltok::kw_landingpad:break;
++    case lltok::kw_personality:break;
++    case lltok::kw_cleanup:break;
++    case lltok::kw_catch:break;
++    case lltok::kw_filter:break;
++    case lltok::kw_ret:break;
++    case lltok::kw_br:break;
++    case lltok::kw_switch:break;
++    case lltok::kw_indirectbr:break;
++    case lltok::kw_invoke:break;
++    case lltok::kw_resume:break;
++    case lltok::kw_unreachable:break;
++    case lltok::kw_cleanupret:break;
++    case lltok::kw_catchswitch:break;
++    case lltok::kw_catchret:break;
++    case lltok::kw_catchpad:break;
++    case lltok::kw_cleanuppad:break;
++    case lltok::kw_alloca:break;
++    case lltok::kw_load:break;
++    case lltok::kw_store:break;
++    case lltok::kw_fence:break;
++    case lltok::kw_cmpxchg:break;
++    case lltok::kw_atomicrmw:break;
++    case lltok::kw_distinct:break;
++    case lltok::kw_uselistorder:break;
++    case lltok::kw_uselistorder_bb:break;
++    case lltok::AttrGrpID:break;
++    case lltok::LabelStr:break;
++    case lltok::ComdatVar:break;
++    case lltok::MetadataVar:break;
++    case lltok::StringConstant:break;
++    case lltok::DwarfTag:break;
++    case lltok::DwarfAttEncoding:break;
++    case lltok::DwarfVirtuality:break;
++    case lltok::DwarfLang:break;
++    case lltok::EmissionKind:break;
++    case lltok::DwarfOp:break;
++    case lltok::DIFlag:break;
++    case lltok::DwarfMacinfo:break;
++    case lltok::Type:break;
+   }
+ 
+   Lex.Lex();
+@@ -4891,6 +5138,7 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
+   case lltok::kw_cleanuppad:  return ParseCleanupPad(Inst, PFS);
+   // Binary Operators.
+   case lltok::kw_add:
++  case lltok::kw_fml:
+   case lltok::kw_sub:
+   case lltok::kw_mul:
+   case lltok::kw_shl: {
+@@ -6099,6 +6347,7 @@ int LLParser::ParseAtomicRMW(Instruction *&Inst, PerFunctionState &PFS) {
+   default: return TokError("expected binary operation in atomicrmw");
+   case lltok::kw_xchg: Operation = AtomicRMWInst::Xchg; break;
+   case lltok::kw_add: Operation = AtomicRMWInst::Add; break;
++  case lltok::kw_fml: Operation = AtomicRMWInst::Fml; break;
+   case lltok::kw_sub: Operation = AtomicRMWInst::Sub; break;
+   case lltok::kw_and: Operation = AtomicRMWInst::And; break;
+   case lltok::kw_nand: Operation = AtomicRMWInst::Nand; break;
+diff --git a/lib/Bitcode/Reader/BitcodeReader.cpp b/lib/Bitcode/Reader/BitcodeReader.cpp
+index 34cbc7d..9861a87 100644
+--- a/lib/Bitcode/Reader/BitcodeReader.cpp
++++ b/lib/Bitcode/Reader/BitcodeReader.cpp
+@@ -761,6 +761,8 @@ static int getDecodedBinaryOpcode(unsigned Val, Type *Ty) {
+     return IsFP ? Instruction::FAdd : Instruction::Add;
+   case bitc::BINOP_SUB:
+     return IsFP ? Instruction::FSub : Instruction::Sub;
++    case bitc::BINOP_FML:
++      return IsFP ? -1 : Instruction::Fml;
+   case bitc::BINOP_MUL:
+     return IsFP ? Instruction::FMul : Instruction::Mul;
+   case bitc::BINOP_UDIV:
+@@ -792,6 +794,7 @@ static AtomicRMWInst::BinOp getDecodedRMWOperation(unsigned Val) {
+   default: return AtomicRMWInst::BAD_BINOP;
+   case bitc::RMW_XCHG: return AtomicRMWInst::Xchg;
+   case bitc::RMW_ADD: return AtomicRMWInst::Add;
++  case bitc::RMW_FML: return AtomicRMWInst::Fml;
+   case bitc::RMW_SUB: return AtomicRMWInst::Sub;
+   case bitc::RMW_AND: return AtomicRMWInst::And;
+   case bitc::RMW_NAND: return AtomicRMWInst::Nand;
+@@ -2823,6 +2826,7 @@ std::error_code BitcodeReader::parseConstants() {
+         unsigned Flags = 0;
+         if (Record.size() >= 4) {
+           if (Opc == Instruction::Add ||
++              Opc == Instruction::Fml ||
+               Opc == Instruction::Sub ||
+               Opc == Instruction::Mul ||
+               Opc == Instruction::Shl) {
+@@ -4200,6 +4204,7 @@ std::error_code BitcodeReader::parseFunctionBody(Function *F) {
+       InstructionList.push_back(I);
+       if (OpNum < Record.size()) {
+         if (Opc == Instruction::Add ||
++            Opc == Instruction::Fml ||
+             Opc == Instruction::Sub ||
+             Opc == Instruction::Mul ||
+             Opc == Instruction::Shl) {
+diff --git a/lib/Bitcode/Writer/BitcodeWriter.cpp b/lib/Bitcode/Writer/BitcodeWriter.cpp
+index 6e8d6e8..b794fa7 100644
+--- a/lib/Bitcode/Writer/BitcodeWriter.cpp
++++ b/lib/Bitcode/Writer/BitcodeWriter.cpp
+@@ -87,6 +87,7 @@ static unsigned GetEncodedBinaryOpcode(unsigned Opcode) {
+   default: llvm_unreachable("Unknown binary instruction!");
+   case Instruction::Add:
+   case Instruction::FAdd: return bitc::BINOP_ADD;
++  case Instruction::Fml: return bitc::BINOP_FML;
+   case Instruction::Sub:
+   case Instruction::FSub: return bitc::BINOP_SUB;
+   case Instruction::Mul:
+@@ -111,6 +112,7 @@ static unsigned GetEncodedRMWOperation(AtomicRMWInst::BinOp Op) {
+   default: llvm_unreachable("Unknown RMW operation!");
+   case AtomicRMWInst::Xchg: return bitc::RMW_XCHG;
+   case AtomicRMWInst::Add: return bitc::RMW_ADD;
++  case AtomicRMWInst::Fml: return bitc::RMW_FML;
+   case AtomicRMWInst::Sub: return bitc::RMW_SUB;
+   case AtomicRMWInst::And: return bitc::RMW_AND;
+   case AtomicRMWInst::Nand: return bitc::RMW_NAND;
+diff --git a/lib/IR/Instruction.cpp b/lib/IR/Instruction.cpp
+index a0d2a87..fc75cc9 100644
+--- a/lib/IR/Instruction.cpp
++++ b/lib/IR/Instruction.cpp
+@@ -273,6 +273,7 @@ const char *Instruction::getOpcodeName(unsigned OpCode) {
+   // Standard binary operators...
+   case Add: return "add";
+   case FAdd: return "fadd";
++  case Fml: return "fml";
+   case Sub: return "sub";
+   case FSub: return "fsub";
+   case Mul: return "mul";
+@@ -559,7 +560,7 @@ bool Instruction::mayReturn() const {
+ ///
+ bool Instruction::isAssociative(unsigned Opcode) {
+   return Opcode == And || Opcode == Or || Opcode == Xor ||
+-         Opcode == Add || Opcode == And || Opcode == Mul;
++         Opcode == Add || Opcode == And || Opcode == Fml || Opcode == Mul;
+ }
+ 
+ bool Instruction::isAssociative() const {
+@@ -587,6 +588,7 @@ bool Instruction::isCommutative(unsigned op) {
+   switch (op) {
+   case Add:
+   case FAdd:
++  case Fml:
+   case Mul:
+   case FMul:
+   case And:
+diff --git a/lib/IR/Instructions.cpp b/lib/IR/Instructions.cpp
+index 8ad9c07..bfe84a4 100644
+--- a/lib/IR/Instructions.cpp
++++ b/lib/IR/Instructions.cpp
+@@ -1971,6 +1971,7 @@ void BinaryOperator::init(BinaryOps iType) {
+ #ifndef NDEBUG
+   switch (iType) {
+   case Add: case Sub:
++  case Fml:
+   case Mul:
+     assert(getType() == LHS->getType() &&
+            "Arithmetic operation should return same type as operands!");

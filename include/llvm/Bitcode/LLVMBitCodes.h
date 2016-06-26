@@ -324,7 +324,8 @@ enum BinaryOpcodes {
   BINOP_ASHR = 9,
   BINOP_AND = 10,
   BINOP_OR = 11,
-  BINOP_XOR = 12
+  BINOP_XOR = 12,
+  BINOP_FML = 13
 };
 
 /// These are values used in the bitcode files to encode AtomicRMW operations.
@@ -341,7 +342,8 @@ enum RMWOperations {
   RMW_MAX = 7,
   RMW_MIN = 8,
   RMW_UMAX = 9,
-  RMW_UMIN = 10
+  RMW_UMIN = 10,
+  RMW_FML = 11
 };
 
 /// OverflowingBinaryOperatorOptionalFlags - Flags for serializing

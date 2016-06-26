@@ -192,7 +192,7 @@ namespace ISD {
     MERGE_VALUES,
 
     /// Simple integer binary arithmetic operators.
-    ADD, SUB, MUL, SDIV, UDIV, SREM, UREM,
+    ADD, SUB, MUL, FML, SDIV, UDIV, SREM, UREM,
 
     /// SMUL_LOHI/UMUL_LOHI - Multiply two integers of type iN, producing
     /// a signed/unsigned value of type i[2*N], and return the full value as

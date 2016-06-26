@@ -2443,6 +2443,7 @@ static bool isVectorReductionOp(const User *I) {
   auto OpCode = Inst->getOpcode();
   switch (OpCode) {
   case Instruction::Add:
+  case Instruction::Fml:
   case Instruction::Mul:
   case Instruction::And:
   case Instruction::Or:

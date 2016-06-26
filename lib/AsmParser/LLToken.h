@@ -184,7 +184,7 @@ namespace lltok {
     kw_xchg, kw_nand, kw_max, kw_min, kw_umax, kw_umin,
 
     // Instruction Opcodes (Opcode in UIntVal).
-    kw_add,  kw_fadd, kw_sub,  kw_fsub, kw_mul,  kw_fmul,
+    kw_add,  kw_fadd,  kw_fml, kw_sub,  kw_fsub, kw_mul,  kw_fmul,
     kw_udiv, kw_sdiv, kw_fdiv,
     kw_urem, kw_srem, kw_frem, kw_shl,  kw_lshr, kw_ashr,
     kw_and,  kw_or,   kw_xor,  kw_icmp, kw_fcmp,
