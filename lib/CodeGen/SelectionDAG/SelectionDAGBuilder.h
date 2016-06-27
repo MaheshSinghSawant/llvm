@@ -811,7 +811,9 @@ private:
 
   void visitBinary(const User &I, unsigned OpCode);
   void visitShift(const User &I, unsigned Opcode);
-  void visitAdd(const User &I)  { visitBinary(I, ISD::ADD); }
+  void visitAdd(const User &I)  { visitBinary(I, ISD::ADD); printf("MARKEDTWO\n"); }
+  void visitFml(const User &I)  { visitBinary(I, ISD::ADD);
+  printf("MARKED\n");}
   void visitFAdd(const User &I) { visitBinary(I, ISD::FADD); }
   void visitSub(const User &I)  { visitBinary(I, ISD::SUB); }
   void visitFSub(const User &I);

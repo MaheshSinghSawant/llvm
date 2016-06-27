@@ -595,12 +595,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9ef3dca-4ec5-4320-ba92-b5d3bd884c85" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/Bitcode/LLVMBitCodes.h" afterPath="$PROJECT_DIR$/include/llvm/Bitcode/LLVMBitCodes.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/CodeGen/ISDOpcodes.h" afterPath="$PROJECT_DIR$/include/llvm/CodeGen/ISDOpcodes.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAG.h" afterPath="$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAG.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" afterPath="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/AsmParser/LLToken.h" afterPath="$PROJECT_DIR$/lib/AsmParser/LLToken.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp" afterPath="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h" afterPath="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" afterPath="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
     </list>
     <ignored path="llvm.iws" />
@@ -622,80 +617,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Instruction.def" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
+      <file leaf-file-name="Instructions.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instructions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1832">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <element signature="e#908#952#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstVisitor.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+            <state relative-caret-position="-62">
+              <caret line="689" column="7" selection-start-line="689" selection-start-column="4" selection-end-line="689" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectionDAGBuilder.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SelectionDAGBuilder.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="848" column="8" selection-start-line="848" selection-start-column="7" selection-end-line="848" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAGCombiner.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/DAGCombiner.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="8813" column="21" selection-start-line="8813" selection-start-column="21" selection-end-line="8813" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LLLexer.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="728" column="78" selection-start-line="728" selection-start-column="78" selection-end-line="728" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelectionDAGBuilder.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="999" column="0" selection-start-line="999" selection-start-column="0" selection-end-line="999" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="7340" column="8" selection-start-line="7340" selection-start-column="5" selection-end-line="7340" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ISDOpcodes.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/ISDOpcodes.h">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="236" column="20" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FunctionLoweringInfo.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/FunctionLoweringInfo.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="77" column="38" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectionDAG.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAG.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="1109" column="49" selection-start-line="1109" selection-start-column="46" selection-end-line="1109" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectionDAGNodes.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAGNodes.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7131">
-              <caret line="791" column="21" selection-start-line="791" selection-start-column="18" selection-end-line="791" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableGenBackend.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/llvm/TableGen/TableGenBackend.h">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -704,21 +687,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LLParser.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLParser.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77100">
-              <caret line="5140" column="0" selection-start-line="5140" selection-start-column="0" selection-end-line="5140" selection-end-column="0" />
+            <state relative-caret-position="218">
+              <caret line="701" column="27" selection-start-line="701" selection-start-column="26" selection-end-line="701" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LLToken.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLToken.h">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2790">
-              <caret line="186" column="29" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instruction.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -752,12 +745,13 @@
         <option value="$PROJECT_DIR$/lib/IR/Instructions.cpp" />
         <option value="$PROJECT_DIR$/include/llvm-c/Core.h" />
         <option value="$PROJECT_DIR$/include/llvm/Bitcode/LLVMBitCodes.h" />
-        <option value="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
         <option value="$PROJECT_DIR$/lib/AsmParser/LLToken.h" />
         <option value="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp" />
         <option value="$PROJECT_DIR$/include/llvm/IR/Instruction.def" />
         <option value="$PROJECT_DIR$/include/llvm/CodeGen/ISDOpcodes.h" />
         <option value="$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAG.h" />
+        <option value="$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h" />
+        <option value="$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp" />
       </list>
     </option>
   </component>
@@ -814,38 +808,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="llvm" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="llvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="llvm" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="llvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="llvm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -855,7 +817,7 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/tos" />
     <property name="FullScreen" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -864,7 +826,7 @@
       <recent name="$PROJECT_DIR$/examples" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.check-all">
+  <component name="RunManager" selected="Application.install-lli">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="check-all" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -2922,10 +2884,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="install-lli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="install-lli" CONFIG_NAME="Debug">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="lli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="lli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="lli">
       <envs />
       <method />
@@ -3359,6 +3317,10 @@
       <method />
     </configuration>
     <configuration default="false" name="check-all" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="check-all" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="Fibonacci">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="install-lli" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="LLVM" TARGET_NAME="install-lli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="LLVM" RUN_TARGET_NAME="lli">
       <envs />
       <method />
     </configuration>
@@ -3837,116 +3799,116 @@
       <item index="471" class="java.lang.String" itemvalue="Application.llvm-dsymutil" />
       <item index="472" class="java.lang.String" itemvalue="Application.install-llc" />
       <item index="473" class="java.lang.String" itemvalue="Application.llc" />
-      <item index="474" class="java.lang.String" itemvalue="Application.install-lli" />
-      <item index="475" class="java.lang.String" itemvalue="Application.lli" />
-      <item index="476" class="java.lang.String" itemvalue="Application.lli-child-target" />
-      <item index="477" class="java.lang.String" itemvalue="Application.install-llvm-ar" />
-      <item index="478" class="java.lang.String" itemvalue="Application.install-llvm-lib" />
-      <item index="479" class="java.lang.String" itemvalue="Application.install-llvm-ranlib" />
-      <item index="480" class="java.lang.String" itemvalue="Application.llvm-ar" />
-      <item index="481" class="java.lang.String" itemvalue="Application.llvm-lib" />
-      <item index="482" class="java.lang.String" itemvalue="Application.llvm-ranlib" />
-      <item index="483" class="java.lang.String" itemvalue="Application.install-llvm-as" />
-      <item index="484" class="java.lang.String" itemvalue="Application.llvm-as" />
-      <item index="485" class="java.lang.String" itemvalue="Application.install-llvm-bcanalyzer" />
-      <item index="486" class="java.lang.String" itemvalue="Application.llvm-bcanalyzer" />
-      <item index="487" class="java.lang.String" itemvalue="Application.install-llvm-c-test" />
-      <item index="488" class="java.lang.String" itemvalue="Application.llvm-c-test" />
-      <item index="489" class="java.lang.String" itemvalue="Application.install-llvm-config" />
-      <item index="490" class="java.lang.String" itemvalue="Application.llvm-config" />
-      <item index="491" class="java.lang.String" itemvalue="Application.install-llvm-cov" />
-      <item index="492" class="java.lang.String" itemvalue="Application.llvm-cov" />
-      <item index="493" class="java.lang.String" itemvalue="Application.install-llvm-cxxdump" />
-      <item index="494" class="java.lang.String" itemvalue="Application.llvm-cxxdump" />
-      <item index="495" class="java.lang.String" itemvalue="Application.install-llvm-diff" />
-      <item index="496" class="java.lang.String" itemvalue="Application.llvm-diff" />
-      <item index="497" class="java.lang.String" itemvalue="Application.install-llvm-dis" />
-      <item index="498" class="java.lang.String" itemvalue="Application.llvm-dis" />
-      <item index="499" class="java.lang.String" itemvalue="Application.install-llvm-dwarfdump" />
-      <item index="500" class="java.lang.String" itemvalue="Application.llvm-dwarfdump" />
-      <item index="501" class="java.lang.String" itemvalue="Application.install-llvm-dwp" />
-      <item index="502" class="java.lang.String" itemvalue="Application.llvm-dwp" />
-      <item index="503" class="java.lang.String" itemvalue="Application.install-llvm-extract" />
-      <item index="504" class="java.lang.String" itemvalue="Application.llvm-extract" />
-      <item index="505" class="java.lang.String" itemvalue="Application.install-llvm-link" />
-      <item index="506" class="java.lang.String" itemvalue="Application.llvm-link" />
-      <item index="507" class="java.lang.String" itemvalue="Application.install-llvm-lto" />
-      <item index="508" class="java.lang.String" itemvalue="Application.llvm-lto" />
-      <item index="509" class="java.lang.String" itemvalue="Application.install-llvm-mc" />
-      <item index="510" class="java.lang.String" itemvalue="Application.llvm-mc" />
-      <item index="511" class="java.lang.String" itemvalue="Application.install-llvm-mcmarkup" />
-      <item index="512" class="java.lang.String" itemvalue="Application.llvm-mcmarkup" />
-      <item index="513" class="java.lang.String" itemvalue="Application.install-llvm-nm" />
-      <item index="514" class="java.lang.String" itemvalue="Application.llvm-nm" />
-      <item index="515" class="java.lang.String" itemvalue="Application.install-llvm-objdump" />
-      <item index="516" class="java.lang.String" itemvalue="Application.llvm-objdump" />
-      <item index="517" class="java.lang.String" itemvalue="Application.install-llvm-pdbdump" />
-      <item index="518" class="java.lang.String" itemvalue="Application.llvm-pdbdump" />
-      <item index="519" class="java.lang.String" itemvalue="Application.install-llvm-profdata" />
-      <item index="520" class="java.lang.String" itemvalue="Application.llvm-profdata" />
-      <item index="521" class="java.lang.String" itemvalue="Application.install-llvm-readobj" />
-      <item index="522" class="java.lang.String" itemvalue="Application.llvm-readobj" />
-      <item index="523" class="java.lang.String" itemvalue="Application.install-llvm-rtdyld" />
-      <item index="524" class="java.lang.String" itemvalue="Application.llvm-rtdyld" />
-      <item index="525" class="java.lang.String" itemvalue="Application.install-llvm-size" />
-      <item index="526" class="java.lang.String" itemvalue="Application.llvm-size" />
-      <item index="527" class="java.lang.String" itemvalue="Application.install-llvm-split" />
-      <item index="528" class="java.lang.String" itemvalue="Application.llvm-split" />
-      <item index="529" class="java.lang.String" itemvalue="Application.install-llvm-stress" />
-      <item index="530" class="java.lang.String" itemvalue="Application.llvm-stress" />
-      <item index="531" class="java.lang.String" itemvalue="Application.install-llvm-symbolizer" />
-      <item index="532" class="java.lang.String" itemvalue="Application.llvm-symbolizer" />
-      <item index="533" class="java.lang.String" itemvalue="Application.install-LTO" />
-      <item index="534" class="java.lang.String" itemvalue="Application.LTO" />
-      <item index="535" class="java.lang.String" itemvalue="Application.LTO_exports" />
-      <item index="536" class="java.lang.String" itemvalue="Application.install-obj2yaml" />
-      <item index="537" class="java.lang.String" itemvalue="Application.obj2yaml" />
-      <item index="538" class="java.lang.String" itemvalue="Application.install-opt" />
-      <item index="539" class="java.lang.String" itemvalue="Application.opt" />
-      <item index="540" class="java.lang.String" itemvalue="Application.install-sancov" />
-      <item index="541" class="java.lang.String" itemvalue="Application.sancov" />
-      <item index="542" class="java.lang.String" itemvalue="Application.install-sanstats" />
-      <item index="543" class="java.lang.String" itemvalue="Application.sanstats" />
-      <item index="544" class="java.lang.String" itemvalue="Application.install-verify-uselistorder" />
-      <item index="545" class="java.lang.String" itemvalue="Application.verify-uselistorder" />
-      <item index="546" class="java.lang.String" itemvalue="Application.install-yaml2obj" />
-      <item index="547" class="java.lang.String" itemvalue="Application.yaml2obj" />
-      <item index="548" class="java.lang.String" itemvalue="Application.UnitTests" />
-      <item index="549" class="java.lang.String" itemvalue="Application.OptsTestTableGen" />
-      <item index="550" class="java.lang.String" itemvalue="Application.count" />
-      <item index="551" class="java.lang.String" itemvalue="Application.FileCheck" />
-      <item index="552" class="java.lang.String" itemvalue="Application.not" />
-      <item index="553" class="java.lang.String" itemvalue="Application.llvm-PerfectShuffle" />
-      <item index="554" class="java.lang.String" itemvalue="Application.llvm-tblgen" />
-      <item index="555" class="java.lang.String" itemvalue="Application.obj.llvm-tblgen" />
-      <item index="556" class="java.lang.String" itemvalue="Application.gtest" />
-      <item index="557" class="java.lang.String" itemvalue="Application.gtest_main" />
-      <item index="558" class="java.lang.String" itemvalue="Application.yaml-bench" />
-      <item index="559" class="java.lang.String" itemvalue="Application.Foo" />
-      <item index="560" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="561" class="java.lang.String" itemvalue="Application.Fibonacc" />
-      <item index="562" class="java.lang.String" itemvalue="Google Test.ADTTests" />
-      <item index="563" class="java.lang.String" itemvalue="Google Test.AnalysisTests" />
-      <item index="564" class="java.lang.String" itemvalue="Google Test.AsmParserTests" />
-      <item index="565" class="java.lang.String" itemvalue="Google Test.BitcodeTests" />
-      <item index="566" class="java.lang.String" itemvalue="Google Test.CodeGenTests" />
-      <item index="567" class="java.lang.String" itemvalue="Google Test.DebugInfoDWARFTests" />
-      <item index="568" class="java.lang.String" itemvalue="Google Test.DebugInfoPDBTests" />
-      <item index="569" class="java.lang.String" itemvalue="Google Test.ExecutionEngineTests" />
-      <item index="570" class="java.lang.String" itemvalue="Google Test.MCJITTests" />
-      <item index="571" class="java.lang.String" itemvalue="Google Test.OrcJITTests" />
-      <item index="572" class="java.lang.String" itemvalue="Google Test.IRTests" />
-      <item index="573" class="java.lang.String" itemvalue="Google Test.LineEditorTests" />
-      <item index="574" class="java.lang.String" itemvalue="Google Test.LinkerTests" />
-      <item index="575" class="java.lang.String" itemvalue="Google Test.MCTests" />
-      <item index="576" class="java.lang.String" itemvalue="Google Test.MITests" />
-      <item index="577" class="java.lang.String" itemvalue="Google Test.ObjectYAMLTests" />
-      <item index="578" class="java.lang.String" itemvalue="Google Test.OptionTests" />
-      <item index="579" class="java.lang.String" itemvalue="Google Test.ProfileDataTests" />
-      <item index="580" class="java.lang.String" itemvalue="Google Test.SupportTests" />
-      <item index="581" class="java.lang.String" itemvalue="Google Test.IPOTests" />
-      <item index="582" class="java.lang.String" itemvalue="Google Test.UtilsTests" />
-      <item index="583" class="java.lang.String" itemvalue="Application.check-all" />
+      <item index="474" class="java.lang.String" itemvalue="Application.lli" />
+      <item index="475" class="java.lang.String" itemvalue="Application.lli-child-target" />
+      <item index="476" class="java.lang.String" itemvalue="Application.install-llvm-ar" />
+      <item index="477" class="java.lang.String" itemvalue="Application.install-llvm-lib" />
+      <item index="478" class="java.lang.String" itemvalue="Application.install-llvm-ranlib" />
+      <item index="479" class="java.lang.String" itemvalue="Application.llvm-ar" />
+      <item index="480" class="java.lang.String" itemvalue="Application.llvm-lib" />
+      <item index="481" class="java.lang.String" itemvalue="Application.llvm-ranlib" />
+      <item index="482" class="java.lang.String" itemvalue="Application.install-llvm-as" />
+      <item index="483" class="java.lang.String" itemvalue="Application.llvm-as" />
+      <item index="484" class="java.lang.String" itemvalue="Application.install-llvm-bcanalyzer" />
+      <item index="485" class="java.lang.String" itemvalue="Application.llvm-bcanalyzer" />
+      <item index="486" class="java.lang.String" itemvalue="Application.install-llvm-c-test" />
+      <item index="487" class="java.lang.String" itemvalue="Application.llvm-c-test" />
+      <item index="488" class="java.lang.String" itemvalue="Application.install-llvm-config" />
+      <item index="489" class="java.lang.String" itemvalue="Application.llvm-config" />
+      <item index="490" class="java.lang.String" itemvalue="Application.install-llvm-cov" />
+      <item index="491" class="java.lang.String" itemvalue="Application.llvm-cov" />
+      <item index="492" class="java.lang.String" itemvalue="Application.install-llvm-cxxdump" />
+      <item index="493" class="java.lang.String" itemvalue="Application.llvm-cxxdump" />
+      <item index="494" class="java.lang.String" itemvalue="Application.install-llvm-diff" />
+      <item index="495" class="java.lang.String" itemvalue="Application.llvm-diff" />
+      <item index="496" class="java.lang.String" itemvalue="Application.install-llvm-dis" />
+      <item index="497" class="java.lang.String" itemvalue="Application.llvm-dis" />
+      <item index="498" class="java.lang.String" itemvalue="Application.install-llvm-dwarfdump" />
+      <item index="499" class="java.lang.String" itemvalue="Application.llvm-dwarfdump" />
+      <item index="500" class="java.lang.String" itemvalue="Application.install-llvm-dwp" />
+      <item index="501" class="java.lang.String" itemvalue="Application.llvm-dwp" />
+      <item index="502" class="java.lang.String" itemvalue="Application.install-llvm-extract" />
+      <item index="503" class="java.lang.String" itemvalue="Application.llvm-extract" />
+      <item index="504" class="java.lang.String" itemvalue="Application.install-llvm-link" />
+      <item index="505" class="java.lang.String" itemvalue="Application.llvm-link" />
+      <item index="506" class="java.lang.String" itemvalue="Application.install-llvm-lto" />
+      <item index="507" class="java.lang.String" itemvalue="Application.llvm-lto" />
+      <item index="508" class="java.lang.String" itemvalue="Application.install-llvm-mc" />
+      <item index="509" class="java.lang.String" itemvalue="Application.llvm-mc" />
+      <item index="510" class="java.lang.String" itemvalue="Application.install-llvm-mcmarkup" />
+      <item index="511" class="java.lang.String" itemvalue="Application.llvm-mcmarkup" />
+      <item index="512" class="java.lang.String" itemvalue="Application.install-llvm-nm" />
+      <item index="513" class="java.lang.String" itemvalue="Application.llvm-nm" />
+      <item index="514" class="java.lang.String" itemvalue="Application.install-llvm-objdump" />
+      <item index="515" class="java.lang.String" itemvalue="Application.llvm-objdump" />
+      <item index="516" class="java.lang.String" itemvalue="Application.install-llvm-pdbdump" />
+      <item index="517" class="java.lang.String" itemvalue="Application.llvm-pdbdump" />
+      <item index="518" class="java.lang.String" itemvalue="Application.install-llvm-profdata" />
+      <item index="519" class="java.lang.String" itemvalue="Application.llvm-profdata" />
+      <item index="520" class="java.lang.String" itemvalue="Application.install-llvm-readobj" />
+      <item index="521" class="java.lang.String" itemvalue="Application.llvm-readobj" />
+      <item index="522" class="java.lang.String" itemvalue="Application.install-llvm-rtdyld" />
+      <item index="523" class="java.lang.String" itemvalue="Application.llvm-rtdyld" />
+      <item index="524" class="java.lang.String" itemvalue="Application.install-llvm-size" />
+      <item index="525" class="java.lang.String" itemvalue="Application.llvm-size" />
+      <item index="526" class="java.lang.String" itemvalue="Application.install-llvm-split" />
+      <item index="527" class="java.lang.String" itemvalue="Application.llvm-split" />
+      <item index="528" class="java.lang.String" itemvalue="Application.install-llvm-stress" />
+      <item index="529" class="java.lang.String" itemvalue="Application.llvm-stress" />
+      <item index="530" class="java.lang.String" itemvalue="Application.install-llvm-symbolizer" />
+      <item index="531" class="java.lang.String" itemvalue="Application.llvm-symbolizer" />
+      <item index="532" class="java.lang.String" itemvalue="Application.install-LTO" />
+      <item index="533" class="java.lang.String" itemvalue="Application.LTO" />
+      <item index="534" class="java.lang.String" itemvalue="Application.LTO_exports" />
+      <item index="535" class="java.lang.String" itemvalue="Application.install-obj2yaml" />
+      <item index="536" class="java.lang.String" itemvalue="Application.obj2yaml" />
+      <item index="537" class="java.lang.String" itemvalue="Application.install-opt" />
+      <item index="538" class="java.lang.String" itemvalue="Application.opt" />
+      <item index="539" class="java.lang.String" itemvalue="Application.install-sancov" />
+      <item index="540" class="java.lang.String" itemvalue="Application.sancov" />
+      <item index="541" class="java.lang.String" itemvalue="Application.install-sanstats" />
+      <item index="542" class="java.lang.String" itemvalue="Application.sanstats" />
+      <item index="543" class="java.lang.String" itemvalue="Application.install-verify-uselistorder" />
+      <item index="544" class="java.lang.String" itemvalue="Application.verify-uselistorder" />
+      <item index="545" class="java.lang.String" itemvalue="Application.install-yaml2obj" />
+      <item index="546" class="java.lang.String" itemvalue="Application.yaml2obj" />
+      <item index="547" class="java.lang.String" itemvalue="Application.UnitTests" />
+      <item index="548" class="java.lang.String" itemvalue="Application.OptsTestTableGen" />
+      <item index="549" class="java.lang.String" itemvalue="Application.count" />
+      <item index="550" class="java.lang.String" itemvalue="Application.FileCheck" />
+      <item index="551" class="java.lang.String" itemvalue="Application.not" />
+      <item index="552" class="java.lang.String" itemvalue="Application.llvm-PerfectShuffle" />
+      <item index="553" class="java.lang.String" itemvalue="Application.llvm-tblgen" />
+      <item index="554" class="java.lang.String" itemvalue="Application.obj.llvm-tblgen" />
+      <item index="555" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="556" class="java.lang.String" itemvalue="Application.gtest_main" />
+      <item index="557" class="java.lang.String" itemvalue="Application.yaml-bench" />
+      <item index="558" class="java.lang.String" itemvalue="Application.Foo" />
+      <item index="559" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="560" class="java.lang.String" itemvalue="Application.Fibonacc" />
+      <item index="561" class="java.lang.String" itemvalue="Google Test.ADTTests" />
+      <item index="562" class="java.lang.String" itemvalue="Google Test.AnalysisTests" />
+      <item index="563" class="java.lang.String" itemvalue="Google Test.AsmParserTests" />
+      <item index="564" class="java.lang.String" itemvalue="Google Test.BitcodeTests" />
+      <item index="565" class="java.lang.String" itemvalue="Google Test.CodeGenTests" />
+      <item index="566" class="java.lang.String" itemvalue="Google Test.DebugInfoDWARFTests" />
+      <item index="567" class="java.lang.String" itemvalue="Google Test.DebugInfoPDBTests" />
+      <item index="568" class="java.lang.String" itemvalue="Google Test.ExecutionEngineTests" />
+      <item index="569" class="java.lang.String" itemvalue="Google Test.MCJITTests" />
+      <item index="570" class="java.lang.String" itemvalue="Google Test.OrcJITTests" />
+      <item index="571" class="java.lang.String" itemvalue="Google Test.IRTests" />
+      <item index="572" class="java.lang.String" itemvalue="Google Test.LineEditorTests" />
+      <item index="573" class="java.lang.String" itemvalue="Google Test.LinkerTests" />
+      <item index="574" class="java.lang.String" itemvalue="Google Test.MCTests" />
+      <item index="575" class="java.lang.String" itemvalue="Google Test.MITests" />
+      <item index="576" class="java.lang.String" itemvalue="Google Test.ObjectYAMLTests" />
+      <item index="577" class="java.lang.String" itemvalue="Google Test.OptionTests" />
+      <item index="578" class="java.lang.String" itemvalue="Google Test.ProfileDataTests" />
+      <item index="579" class="java.lang.String" itemvalue="Google Test.SupportTests" />
+      <item index="580" class="java.lang.String" itemvalue="Google Test.IPOTests" />
+      <item index="581" class="java.lang.String" itemvalue="Google Test.UtilsTests" />
+      <item index="582" class="java.lang.String" itemvalue="Application.check-all" />
+      <item index="583" class="java.lang.String" itemvalue="Application.install-lli" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -3977,17 +3939,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18604651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20930232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3818408" sideWeight="0.57857645" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6256219" sideWeight="0.6109937" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5024665" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4465174" sideWeight="0.44256517" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49753347" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024097" sideWeight="0.5109232" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6256219" sideWeight="0.6109937" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.42142352" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118159205" sideWeight="0.38900635" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39917126" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3995,7 +3958,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33830845" sideWeight="0.48907682" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -4037,21 +3999,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/ModuleMaker/ModuleMaker.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/Kaleidoscope/Chapter8/toy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6180">
-          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hell" />
     <entry file="file://$PROJECT_DIR$/hell.ll" />
     <entry file="file://$PROJECT_DIR$/hell.bc" />
     <entry file="file://$PROJECT_DIR$/hell.c" />
@@ -4086,13 +4033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/Foo/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -4121,27 +4061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/Fibonacci/fibonacci.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="103" column="17" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-          <folding>
-            <element signature="e#920#949#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4149,7 +4072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4181,13 +4103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="271" column="42" selection-start-line="271" selection-start-column="39" selection-end-line="271" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/AsmParser/Parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1014">
@@ -4195,24 +4110,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instructions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="667" column="77" selection-start-line="667" selection-start-column="77" selection-end-line="667" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/ExtendingLLVM.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3615">
-          <caret line="731" column="44" selection-start-line="731" selection-start-column="40" selection-end-line="731" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -4253,14 +4154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4170">
-          <caret line="278" column="10" selection-start-line="278" selection-start-column="7" selection-end-line="278" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/IR/Core.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -4277,19 +4170,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24780">
-          <caret line="1652" column="3" selection-start-line="1652" selection-start-column="3" selection-end-line="1652" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/Bitcode/LLVMBitCodes.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5175">
           <caret line="345" column="14" selection-start-line="345" selection-start-column="14" selection-end-line="345" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4297,7 +4181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4313,7 +4196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2790">
           <caret line="186" column="29" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4321,56 +4203,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="236" column="20" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/FunctionLoweringInfo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="77" column="38" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAG.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="1109" column="49" selection-start-line="1109" selection-start-column="46" selection-end-line="1109" selection-end-column="49" />
-          <folding />
+        <state relative-caret-position="106">
+          <caret line="1133" column="18" selection-start-line="1133" selection-start-column="18" selection-end-line="1133" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/SelectionDAGNodes.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7131">
-          <caret line="791" column="21" selection-start-line="791" selection-start-column="18" selection-end-line="791" selection-end-column="21" />
+        <state relative-caret-position="130">
+          <caret line="935" column="7" selection-start-line="935" selection-start-column="7" selection-end-line="935" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CodeGen/TargetLoweringBase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24765">
+          <caret line="1651" column="39" selection-start-line="1651" selection-start-column="39" selection-end-line="1651" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.def">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1832">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="1935">
+          <caret line="129" column="45" selection-start-line="129" selection-start-column="45" selection-end-line="129" selection-end-column="45" />
           <folding>
             <element signature="e#908#952#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instruction.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4065">
+          <caret line="271" column="49" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/llvm/IR/InstVisitor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="1815">
           <caret line="121" column="41" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/CodeGen/FunctionLoweringInfo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="38" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/IR/Instruction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/DAGCombiner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="8813" column="21" selection-start-line="8813" selection-start-column="21" selection-end-line="8813" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AsmParser/LLLexer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="728" column="78" selection-start-line="728" selection-start-column="78" selection-end-line="728" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/llvm/IR/Instructions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="689" column="7" selection-start-line="689" selection-start-column="4" selection-end-line="689" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="848" column="8" selection-start-line="848" selection-start-column="7" selection-end-line="848" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/CodeGen/SelectionDAG/SelectionDAGBuilder.cpp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="7340" column="8" selection-start-line="7340" selection-start-column="5" selection-end-line="7340" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/Fibonacci/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="999" column="0" selection-start-line="999" selection-start-column="0" selection-end-line="999" selection-end-column="0" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="701" column="27" selection-start-line="701" selection-start-column="26" selection-end-line="701" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -1650,7 +1650,7 @@ int TargetLoweringBase::InstructionOpcodeToISD(unsigned Opcode) const {
   case CatchSwitch:    return 0;
   case CleanupPad:     return 0;
   case Add:            return ISD::ADD;
-//  case Fml:            return ISD::FML;
+  case Fml:            return ISD::ADD;
   case FAdd:           return ISD::FADD;
   case Sub:            return ISD::SUB;
   case FSub:           return ISD::FSUB;
