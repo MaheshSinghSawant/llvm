@@ -112,7 +112,7 @@ typedef enum {
   /* Standard Binary Operators */
   LLVMAdd            = 8,
   LLVMFAdd           = 9,
-  LLVMFml            = 69,
+  LLVMInc            = 69,//MARKINC
   LLVMSub            = 10,
   LLVMFSub           = 11,
   LLVMMul            = 12,
@@ -180,7 +180,9 @@ typedef enum {
   LLVMCatchRet       = 62,
   LLVMCatchPad       = 63,
   LLVMCleanupPad     = 64,
-  LLVMCatchSwitch    = 65
+  LLVMCatchSwitch    = 65,
+  LLVMFire           = 66,
+  LLVMNOP           = 67
 } LLVMOpcode;
 
 typedef enum {
@@ -355,7 +357,7 @@ typedef enum {
 typedef enum {
     LLVMAtomicRMWBinOpXchg, /**< Set the new value and return the one old */
     LLVMAtomicRMWBinOpAdd, /**< Add a value and return the old one */
-    LLVMAtomicRMWBinOpFml, /**< Add a value and return the old one */
+    LLVMAtomicRMWBinOpInc, /**< Add a value and return the old one */
     LLVMAtomicRMWBinOpSub, /**< Subtract a value and return the old one */
     LLVMAtomicRMWBinOpAnd, /**< And a value and return the old one */
     LLVMAtomicRMWBinOpNand, /**< Not-And a value and return the old one */
@@ -1686,7 +1688,7 @@ LLVMValueRef LLVMConstNUWNeg(LLVMValueRef ConstantVal);
 LLVMValueRef LLVMConstFNeg(LLVMValueRef ConstantVal);
 LLVMValueRef LLVMConstNot(LLVMValueRef ConstantVal);
 LLVMValueRef LLVMConstAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
-LLVMValueRef LLVMConstFml(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
+LLVMValueRef LLVMConstInc(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
 LLVMValueRef LLVMConstNSWAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
 LLVMValueRef LLVMConstNUWAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
 LLVMValueRef LLVMConstFAdd(LLVMValueRef LHSConstant, LLVMValueRef RHSConstant);
@@ -2854,7 +2856,7 @@ void LLVMSetCleanup(LLVMValueRef LandingPad, LLVMBool Val);
 /* Arithmetic */
 LLVMValueRef LLVMBuildAdd(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
                           const char *Name);
-LLVMValueRef LLVMBuildFml(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
+LLVMValueRef LLVMBuildInc(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
                           const char *Name);
 LLVMValueRef LLVMBuildNSWAdd(LLVMBuilderRef, LLVMValueRef LHS, LLVMValueRef RHS,
                              const char *Name);

@@ -2988,11 +2988,12 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
 
   // Binary Operators.
   case lltok::kw_add:
+  case lltok::kw_inc:
   case lltok::kw_fadd:
   case lltok::kw_sub:
   case lltok::kw_fsub:
   case lltok::kw_mul:
-  case lltok::kw_fml:
+  //case lltok::kw_fml:
   case lltok::kw_fmul:
   case lltok::kw_udiv:
   case lltok::kw_sdiv:
@@ -3010,7 +3011,7 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     Constant *Val0, *Val1;
     Lex.Lex();
     LocTy ModifierLoc = Lex.getLoc();
-    if (Opc == Instruction::Add || Opc == Instruction::Sub || Opc == Instruction::Fml ||
+    if (Opc == Instruction::Add || Opc == Instruction::Sub ||
         Opc == Instruction::Mul || Opc == Instruction::Shl) {
       if (EatIfPresent(lltok::kw_nuw))
         NUW = true;
@@ -3041,7 +3042,6 @@ bool LLParser::ParseValID(ValID &ID, PerFunctionState *PFS) {
     // Check that the type is valid for the operator.
     switch (Opc) {
     case Instruction::Add:
-    case Instruction::Fml:
     case Instruction::Sub:
     case Instruction::Mul:
     case Instruction::UDiv:
@@ -5138,7 +5138,7 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
   case lltok::kw_cleanuppad:  return ParseCleanupPad(Inst, PFS);
   // Binary Operators.
   case lltok::kw_add:
-  case lltok::kw_fml:
+  //case lltok::kw_inc:
   case lltok::kw_sub:
   case lltok::kw_mul:
   case lltok::kw_shl: {
@@ -5149,6 +5149,7 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
     if (ParseArithmetic(Inst, PFS, KeywordVal, 1)) return true;
 
     if (NUW) cast<BinaryOperator>(Inst)->setHasNoUnsignedWrap(true);
+    //MARK:
     if (NSW) cast<BinaryOperator>(Inst)->setHasNoSignedWrap(true);
     return false;
   }
@@ -5215,6 +5216,10 @@ int LLParser::ParseInstruction(Instruction *&Inst, BasicBlock *BB,
   case lltok::kw_shufflevector:  return ParseShuffleVector(Inst, PFS);
   case lltok::kw_phi:            return ParsePHI(Inst, PFS);
   case lltok::kw_landingpad:     return ParseLandingPad(Inst, PFS);
+  case lltok::kw_fire:       return ParseFire(Inst, PFS);//MARKFIRE
+    case lltok::kw_nop:            return ParseNOP(Inst, PFS);//MARKNOP
+    case lltok::kw_inc:            return ParseInc(Inst, PFS);//MARKINC
+
   // Call.
   case lltok::kw_call:     return ParseCall(Inst, PFS, CallInst::TCK_None);
   case lltok::kw_tail:     return ParseCall(Inst, PFS, CallInst::TCK_Tail);
@@ -6347,7 +6352,7 @@ int LLParser::ParseAtomicRMW(Instruction *&Inst, PerFunctionState &PFS) {
   default: return TokError("expected binary operation in atomicrmw");
   case lltok::kw_xchg: Operation = AtomicRMWInst::Xchg; break;
   case lltok::kw_add: Operation = AtomicRMWInst::Add; break;
-  case lltok::kw_fml: Operation = AtomicRMWInst::Fml; break;
+  //case lltok::kw_inc: Operation = AtomicRMWInst::Inc; break; //MARKINC
   case lltok::kw_sub: Operation = AtomicRMWInst::Sub; break;
   case lltok::kw_and: Operation = AtomicRMWInst::And; break;
   case lltok::kw_nand: Operation = AtomicRMWInst::Nand; break;
@@ -6402,6 +6407,32 @@ int LLParser::ParseFence(Instruction *&Inst, PerFunctionState &PFS) {
   Inst = new FenceInst(Context, Ordering, Scope);
   return InstNormal;
 }
+//MARKFIRE
+
+/// ParseFire
+///   ::= 'fire'
+int LLParser::ParseFire(Instruction *&Inst, PerFunctionState &PFS){
+    Inst = new FireInst(Context);
+    return InstNormal;
+  }
+
+//MARKNOP
+
+/// ParseNOP
+///   ::= 'nop'
+int LLParser::ParseNOP(Instruction *&Inst, PerFunctionState &PFS){
+    Inst = new NOPInst(Context);
+    return InstNormal;
+  }
+
+//MARKINC
+/// ParseInc
+///   ::= 'inc'
+int LLParser::ParseInc(Instruction *&Inst, PerFunctionState &PFS){
+  Inst = new IncInst(Context);
+  return InstNormal;
+}
+
 
 /// ParseGetElementPtr
 ///   ::= 'getelementptr' 'inbounds'? TypeAndValue (',' TypeAndValue)*

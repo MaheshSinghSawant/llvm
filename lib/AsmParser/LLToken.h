@@ -184,7 +184,7 @@ namespace lltok {
     kw_xchg, kw_nand, kw_max, kw_min, kw_umax, kw_umin,
 
     // Instruction Opcodes (Opcode in UIntVal).
-    kw_add,  kw_fadd,  kw_fml, kw_sub,  kw_fsub, kw_mul,  kw_fmul,
+    kw_add,  kw_fadd,  kw_inc, kw_sub,  kw_fsub, kw_mul,  kw_fmul, //MARKINC
     kw_udiv, kw_sdiv, kw_fdiv,
     kw_urem, kw_srem, kw_frem, kw_shl,  kw_lshr, kw_ashr,
     kw_and,  kw_or,   kw_xor,  kw_icmp, kw_fcmp,
@@ -195,7 +195,7 @@ namespace lltok {
     kw_addrspacecast,
     kw_select, kw_va_arg,
 
-    kw_landingpad, kw_personality, kw_cleanup, kw_catch, kw_filter,
+    kw_landingpad, kw_personality, kw_cleanup, kw_catch, kw_filter, kw_fire, kw_nop, //MARKNOP//MARKFIRE
 
     kw_ret, kw_br, kw_switch, kw_indirectbr, kw_invoke, kw_resume,
     kw_unreachable, kw_cleanupret, kw_catchswitch, kw_catchret, kw_catchpad,

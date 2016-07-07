@@ -150,7 +150,7 @@ void *User::operator new(size_t Size, unsigned Us) {
 void *User::operator new(size_t Size, unsigned Us, unsigned DescBytes) {
   return allocateFixedOperandUser(Size, Us, DescBytes);
 }
-
+//HINTINC
 void *User::operator new(size_t Size) {
   // Allocate space for a single Use*
   void *Storage = ::operator new(Size + sizeof(Use *));

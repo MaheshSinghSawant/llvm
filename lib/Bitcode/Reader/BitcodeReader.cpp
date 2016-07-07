@@ -761,8 +761,8 @@ static int getDecodedBinaryOpcode(unsigned Val, Type *Ty) {
     return IsFP ? Instruction::FAdd : Instruction::Add;
   case bitc::BINOP_SUB:
     return IsFP ? Instruction::FSub : Instruction::Sub;
-    case bitc::BINOP_FML:
-      return IsFP ? -1 : Instruction::Fml;
+//    case bitc::BINOP_FML:
+//      return IsFP ? -1 : Instruction::Fml;
   case bitc::BINOP_MUL:
     return IsFP ? Instruction::FMul : Instruction::Mul;
   case bitc::BINOP_UDIV:
@@ -794,7 +794,7 @@ static AtomicRMWInst::BinOp getDecodedRMWOperation(unsigned Val) {
   default: return AtomicRMWInst::BAD_BINOP;
   case bitc::RMW_XCHG: return AtomicRMWInst::Xchg;
   case bitc::RMW_ADD: return AtomicRMWInst::Add;
-  case bitc::RMW_FML: return AtomicRMWInst::Fml;
+ // case bitc::RMW_FML: return AtomicRMWInst::Fml;
   case bitc::RMW_SUB: return AtomicRMWInst::Sub;
   case bitc::RMW_AND: return AtomicRMWInst::And;
   case bitc::RMW_NAND: return AtomicRMWInst::Nand;
@@ -2826,7 +2826,7 @@ std::error_code BitcodeReader::parseConstants() {
         unsigned Flags = 0;
         if (Record.size() >= 4) {
           if (Opc == Instruction::Add ||
-              Opc == Instruction::Fml ||
+//              Opc == Instruction::Fml ||
               Opc == Instruction::Sub ||
               Opc == Instruction::Mul ||
               Opc == Instruction::Shl) {
@@ -4204,7 +4204,7 @@ std::error_code BitcodeReader::parseFunctionBody(Function *F) {
       InstructionList.push_back(I);
       if (OpNum < Record.size()) {
         if (Opc == Instruction::Add ||
-            Opc == Instruction::Fml ||
+            //Opc == Instruction::Fml ||
             Opc == Instruction::Sub ||
             Opc == Instruction::Mul ||
             Opc == Instruction::Shl) {
@@ -4970,6 +4970,14 @@ std::error_code BitcodeReader::parseFunctionBody(Function *F) {
       InstructionList.push_back(I);
       break;
     }
+
+            //MARKNOP
+                case bitc::FUNC_CODE_INST_NOP: {
+              I = new NOPInst(Context);
+              InstructionList.push_back(I);
+              break;
+            }
+
     case bitc::FUNC_CODE_INST_LOADATOMIC: {
        // LOADATOMIC: [opty, op, align, vol, ordering, synchscope]
       unsigned OpNum = 0;

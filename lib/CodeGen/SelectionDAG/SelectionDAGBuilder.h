@@ -811,9 +811,9 @@ private:
 
   void visitBinary(const User &I, unsigned OpCode);
   void visitShift(const User &I, unsigned Opcode);
-  void visitAdd(const User &I)  { visitBinary(I, ISD::ADD); printf("MARKEDTWO\n"); }
-  void visitFml(const User &I)  { visitBinary(I, ISD::ADD);
-  printf("MARKED\n");}
+  void visitAdd(const User &I)  { visitBinary(I, ISD::ADD); printf("MARKED ADD\n"); }
+  void visitFml(const User &I)  { visitBinary(I, ISD::SUB); printf("MARKEDFml\n");}
+  //void visitInc(const User &I)  { visitBinary(I, ISD::ADD); printf("MARKED INC\n"); } //MARKINC
   void visitFAdd(const User &I) { visitBinary(I, ISD::FADD); }
   void visitSub(const User &I)  { visitBinary(I, ISD::SUB); }
   void visitFSub(const User &I);
@@ -855,7 +855,9 @@ private:
   void visitExtractValue(const ExtractValueInst &I);
   void visitInsertValue(const InsertValueInst &I);
   void visitLandingPad(const LandingPadInst &I);
-
+  void visitFire(const FireInst &I);//MARKFIRE
+    void visitNOP(const NOPInst &I);//MARKNOP
+    void visitInc(const IncInst &I);//MARKINC
   void visitGetElementPtr(const User &I);
   void visitSelect(const User &I);
 

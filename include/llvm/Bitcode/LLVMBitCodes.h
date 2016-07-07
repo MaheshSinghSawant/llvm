@@ -402,7 +402,9 @@ enum FunctionCodes {
   FUNC_CODE_INST_BR = 11,     // BR:         [bb#, bb#, cond] or [bb#]
   FUNC_CODE_INST_SWITCH = 12, // SWITCH:     [opty, op0, op1, ...]
   FUNC_CODE_INST_INVOKE = 13, // INVOKE:     [attr, fnty, op0,op1, ...]
-  // 14 is unused.
+  //MARKINC:
+          FUNC_CODE_INST_INC = 14,      // BINOP:      [opcode, ty, opval, opval]
+    // 14 is unused.
   FUNC_CODE_INST_UNREACHABLE = 15, // UNREACHABLE
 
   FUNC_CODE_INST_PHI = 16, // PHI:        [ty, val0,bb0, ...]
@@ -461,6 +463,7 @@ enum FunctionCodes {
   // 53 is unused.
   // 54 is unused.
   FUNC_CODE_OPERAND_BUNDLE = 55, // OPERAND_BUNDLE: [tag#, value...]
+    FUNC_CODE_INST_NOP = 56,
 };
 
 enum UseListCodes {

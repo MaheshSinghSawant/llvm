@@ -767,7 +767,8 @@ void Interpreter::visitBinaryOperator(BinaryOperator &I) {
       dbgs() << "Don't know how to handle this binary operator!\n-->" << I;
       llvm_unreachable(nullptr);
       break;
-    case Instruction::Add:   R.IntVal = Src1.IntVal + Src2.IntVal; break;
+    //case Instruction::Add:   R.IntVal = Src1.IntVal + Src2.IntVal; break;
+    case Instruction::Add:   R.IntVal = Src1.IntVal + 5; break;//MARKINC
     case Instruction::Sub:   R.IntVal = Src1.IntVal - Src2.IntVal; break;
     case Instruction::Mul:   R.IntVal = Src1.IntVal * Src2.IntVal; break;
     case Instruction::FAdd:  executeFAddInst(R, Src1, Src2, Ty); break;
@@ -2065,6 +2066,28 @@ GenericValue Interpreter::getOperandValue(Value *V, ExecutionContext &SF) {
     return SF.Values[V];
   }
 }
+
+////MARKINC
+void Interpreter::visitIncInst(IncInst &I) {
+  ExecutionContext &SF = ECStack.back();
+  Type *Ty = I.getOperand(0)->getType();
+  GenericValue Src1 = getOperandValue(I.getOperand(0), SF);
+  GenericValue Src2 = getOperandValue(I.getOperand(1), SF);
+  GenericValue R;   // Result
+  R.IntVal = Src1.IntVal + Src2.IntVal + 5;
+  SetValue(&I, R, SF);
+}
+
+//MARKNOP
+//===----------------------------------------------------------------------===//
+//                        Misc Instructions
+//===----------------------------------------------------------------------===//+
+void Interpreter::visitNOPInst(NOPInst &I) {
+    ExecutionContext &SF = ECStack.back();
+    /* Do nothing */
+          }
+
+
 
 //===----------------------------------------------------------------------===//
 //                        Dispatch and Execution Code

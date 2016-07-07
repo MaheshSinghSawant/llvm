@@ -726,7 +726,7 @@ lltok::Kind LLLexer::LexIdentifier() {
     }                                                                          \
   } while (false)
 
-  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);  INSTKEYWORD(fml,   Fml);
+  INSTKEYWORD(add,   Add);  INSTKEYWORD(fadd,   FAdd);  INSTKEYWORD(inc,   Inc); //MARKINC
   INSTKEYWORD(sub,   Sub);  INSTKEYWORD(fsub,   FSub);
   INSTKEYWORD(mul,   Mul);  INSTKEYWORD(fmul,   FMul);
   INSTKEYWORD(udiv,  UDiv); INSTKEYWORD(sdiv,  SDiv); INSTKEYWORD(fdiv,  FDiv);
@@ -780,6 +780,8 @@ lltok::Kind LLLexer::LexIdentifier() {
   INSTKEYWORD(catchswitch,  CatchSwitch);
   INSTKEYWORD(catchpad,     CatchPad);
   INSTKEYWORD(cleanuppad,   CleanupPad);
+  INSTKEYWORD(fire,   Fire); //MARKFIRE
+  INSTKEYWORD(nop,          NOP);//MARKNOP
 #undef INSTKEYWORD
 
 #define DWKEYWORD(TYPE, TOKEN)                                                 \

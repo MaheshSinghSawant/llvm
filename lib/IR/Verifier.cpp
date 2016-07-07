@@ -2755,6 +2755,7 @@ void Verifier::visitBinaryOperator(BinaryOperator &B) {
   // Check that integer arithmetic operators are only used with
   // integral operands.
   case Instruction::Add:
+  //case Instruction::Fml:
   case Instruction::Sub:
   case Instruction::Mul:
   case Instruction::SDiv:

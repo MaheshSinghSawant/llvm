@@ -86,6 +86,7 @@ endif()
 
 # MARK: Custom Modules
 # Add path for custom modules
+add_subdirectory(Drogon)
 set(CMAKE_MODULE_PATH
   ${CMAKE_MODULE_PATH}
   "${CMAKE_CURRENT_SOURCE_DIR}/cmake"
@@ -740,6 +741,7 @@ if (LLVM_INCLUDE_DOCS)
 endif()
 
 add_subdirectory(cmake/modules)
+
 
 if (NOT LLVM_INSTALL_TOOLCHAIN_ONLY)
   install(DIRECTORY include/llvm include/llvm-c

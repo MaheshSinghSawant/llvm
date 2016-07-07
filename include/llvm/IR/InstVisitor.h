@@ -206,6 +206,12 @@ public:
   RetTy visitFuncletPadInst(FuncletPadInst &I) { DELEGATE(Instruction); }
   RetTy visitCleanupPadInst(CleanupPadInst &I) { DELEGATE(FuncletPadInst); }
   RetTy visitCatchPadInst(CatchPadInst &I)     { DELEGATE(FuncletPadInst); }
+    //MARKINC:
+    RetTy visitIncInst(IncInst &I)               { DELEGATE(Instruction); }
+    //MARKNOP:
+    RetTy visitNOPInst(NOPInst &I)               { DELEGATE(Instruction); }
+    //MARKFIRE:
+  RetTy visitFireInst(FireInst &I)     { printf("DRACARYS\n"); }
 
   // Handle the special instrinsic instruction classes.
   RetTy visitDbgDeclareInst(DbgDeclareInst &I)    { DELEGATE(DbgInfoIntrinsic);}

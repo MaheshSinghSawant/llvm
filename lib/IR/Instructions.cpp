@@ -1971,7 +1971,6 @@ void BinaryOperator::init(BinaryOps iType) {
 #ifndef NDEBUG
   switch (iType) {
   case Add: case Sub:
-  case Fml:
   case Mul:
     assert(getType() == LHS->getType() &&
            "Arithmetic operation should return same type as operands!");
@@ -3960,6 +3959,49 @@ InvokeInst *InvokeInst::cloneImpl() const {
   }
   return new(getNumOperands()) InvokeInst(*this);
 }
+
+//MARKFIRE
+FireInst::FireInst(const FireInst &F)
+        : Instruction(F.getType(), Instruction::Fire, nullptr, 0) {
+}
+
+FireInst::FireInst(LLVMContext &C)
+        : Instruction(Type::getVoidTy(C), Instruction::Fire, nullptr, 0) {
+}
+
+FireInst *FireInst::cloneImpl() const {
+    return new FireInst(*this);
+  }
+
+//MARKNOP
+
+NOPInst::NOPInst(const NOPInst &SH)
+        : Instruction(SH.getType(), Instruction::NOP, nullptr, 0) {
+}
+
+NOPInst::NOPInst(LLVMContext &C)
+        : Instruction(Type::getVoidTy(C), Instruction::NOP, nullptr, 0) {
+}
+
+NOPInst *NOPInst::cloneImpl() const {
+    return new NOPInst(*this);
+  }
+
+//MARKINC
+
+IncInst::IncInst(const IncInst &SH)
+        : Instruction(SH.getType(), Instruction::Inc, nullptr, 0) {
+}
+
+IncInst::IncInst(LLVMContext &C)
+        : Instruction(Type::getVoidTy(C), Instruction::Inc, nullptr, 0) {
+}
+
+IncInst *IncInst::cloneImpl() const {
+  return new IncInst(*this);
+}
+
+
 
 ResumeInst *ResumeInst::cloneImpl() const { return new (1) ResumeInst(*this); }
 

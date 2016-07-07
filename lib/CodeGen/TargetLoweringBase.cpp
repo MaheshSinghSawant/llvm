@@ -1650,7 +1650,7 @@ int TargetLoweringBase::InstructionOpcodeToISD(unsigned Opcode) const {
   case CatchSwitch:    return 0;
   case CleanupPad:     return 0;
   case Add:            return ISD::ADD;
-  case Fml:            return ISD::ADD;
+  //case Inc:            return ISD::INC; //MARKINC
   case FAdd:           return ISD::FADD;
   case Sub:            return ISD::SUB;
   case FSub:           return ISD::FSUB;
@@ -1702,6 +1702,8 @@ int TargetLoweringBase::InstructionOpcodeToISD(unsigned Opcode) const {
   case ExtractValue:   return ISD::MERGE_VALUES;
   case InsertValue:    return ISD::MERGE_VALUES;
   case LandingPad:     return 0;
+  case Fire:           return 0;//MARKFIRE
+  case NOP:            return 0;//MARKNOP
   }
 
   llvm_unreachable("Unknown instruction type encountered!");

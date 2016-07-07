@@ -186,6 +186,9 @@ public:
   void visitExtractValueInst(ExtractValueInst &I);
   void visitInsertValueInst(InsertValueInst &I);
 
+    void visitIncInst(IncInst &I); //MARKINC
+    void visitNOPInst(NOPInst &I);//MARKNOP
+
   void visitInstruction(Instruction &I) {
     errs() << I << "\n";
     llvm_unreachable("Instruction not interpretable yet!");

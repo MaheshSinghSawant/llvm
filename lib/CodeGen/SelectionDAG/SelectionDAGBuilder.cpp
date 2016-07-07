@@ -2345,6 +2345,21 @@ void SelectionDAGBuilder::visitLandingPad(const LandingPadInst &LP) {
   setValue(&LP, Res);
 }
 
+//MARKFIRE
+void SelectionDAGBuilder::visitFire(const FireInst &F) {
+    //TODO not sure what to do here
+}
+
+//MARKNOP
+void SelectionDAGBuilder::visitNOP(const NOPInst &SH) {
+    //TODO not sure what to do here
+          }
+
+//MARKINC
+void SelectionDAGBuilder::visitInc(const IncInst &SH) {
+  //TODO not sure what to do here
+}
+
 void SelectionDAGBuilder::sortAndRangeify(CaseClusterVector &Clusters) {
 #ifndef NDEBUG
   for (const CaseCluster &CC : Clusters)
@@ -2430,6 +2445,7 @@ void SelectionDAGBuilder::visitFSub(const User &I) {
   }
 
   visitBinary(I, ISD::FSUB);
+  
 }
 
 /// Checks if the given instruction performs a vector reduction, in which case
@@ -2443,7 +2459,6 @@ static bool isVectorReductionOp(const User *I) {
   auto OpCode = Inst->getOpcode();
   switch (OpCode) {
   case Instruction::Add:
-  case Instruction::Fml:
   case Instruction::Mul:
   case Instruction::And:
   case Instruction::Or:

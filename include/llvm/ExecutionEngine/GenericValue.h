@@ -23,7 +23,7 @@ namespace llvm {
 
 typedef void* PointerTy;
 class APInt;
-
+//MARKHINT
 struct GenericValue {
   struct IntPair {
     unsigned int first;

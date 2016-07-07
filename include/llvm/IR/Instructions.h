@@ -687,7 +687,7 @@ public:
     /// *p = old + v
     Add,
     /// *p = old - v
-    Fml,
+    //Inc,
     Sub,
     /// *p = old & v
     And,
@@ -711,7 +711,8 @@ public:
     BAD_BINOP
   };
 
-  // allocate space for exactly two operands
+    //HINTINC
+    // allocate space for exactly two operands
   void *operator new(size_t s) {
     return User::operator new(s, 2);
   }
@@ -4808,6 +4809,8 @@ public:
   }
 };
 
+
+
 //===----------------------------------------------------------------------===//
 //                          AddrSpaceCastInst Class
 //===----------------------------------------------------------------------===//
@@ -4846,6 +4849,89 @@ public:
     return isa<Instruction>(V) && classof(cast<Instruction>(V));
   }
 };
+//MARKFIRE
+//===----------------------------------------------------------------------===//
+//                          FireInst Class
+//===----------------------------------------------------------------------===//
+
+class FireInst : public Instruction {
+protected:
+  friend class Instruction;
+  FireInst *cloneImpl() const;
+
+public:
+  void *operator new(size_t s) {
+      return User::operator new(s, 0);
+    }
+
+  FireInst(const FireInst &other);
+  FireInst(LLVMContext &C);
+
+  static inline bool classof(const Instruction *I) {
+      return I->getOpcode() == Fire;
+    }
+  static inline bool classof(const Value *V) {
+      return isa<Instruction>(V) && classof(cast<Instruction>(V));
+    }
+};
+
+    //MARKNOP
+    //===----------------------------------------------------------------------===//
+    //                          NOPInst Class
+    //===----------------------------------------------------------------------===//
+
+    class NOPInst : public Instruction {
+        protected:
+          friend class Instruction;
+          NOPInst *cloneImpl() const;
+
+        public:
+          void *operator new(size_t s) {
+                return User::operator new(s, 0);
+              }
+
+          NOPInst(const NOPInst &other);
+          NOPInst(LLVMContext &C);
+          // Methods for support type inquiry through isa, cast, and dyn_cast:
+          static inline bool classof(const Instruction *I) {
+                return I->getOpcode() == NOP;
+              }
+          static inline bool classof(const Value *V) {
+                return isa<Instruction>(V) && classof(cast<Instruction>(V));
+              }
+        };
+
+//    //MARKINC
+    //===----------------------------------------------------------------------===//
+    //                          IncInst Class
+    //===----------------------------------------------------------------------===//
+
+    class IncInst : public Instruction {
+
+        void *operator new(size_t, unsigned) = delete;
+
+    protected:
+        friend class Instruction;
+        IncInst *cloneImpl() const;
+
+    public:
+
+
+        void *operator new(size_t s) {
+            return User::operator new(s, 2);
+        }
+
+        IncInst(const IncInst &other);
+        IncInst(LLVMContext &C);
+        // Methods for support type inquiry through isa, cast, and dyn_cast:
+        static inline bool classof(const Instruction *I) {
+            return I->getOpcode() == Inc;
+        }
+        static inline bool classof(const Value *V) {
+            return isa<Instruction>(V) && classof(cast<Instruction>(V));
+        }
+    };
+
 
 } // End llvm namespace
 

@@ -798,6 +798,7 @@ GenericValue ExecutionEngine::getConstantValue(const Constant *C) {
         switch (CE->getOpcode()) {
           default: llvm_unreachable("Invalid integer opcode");
           case Instruction::Add: GV.IntVal = LHS.IntVal + RHS.IntVal; break;
+          //case Instruction::Add: GV.IntVal = LHS.IntVal + 5; break;
           case Instruction::Sub: GV.IntVal = LHS.IntVal - RHS.IntVal; break;
           case Instruction::Mul: GV.IntVal = LHS.IntVal * RHS.IntVal; break;
           case Instruction::UDiv:GV.IntVal = LHS.IntVal.udiv(RHS.IntVal); break;

@@ -550,6 +550,7 @@ struct OperandTraits<BinaryOperator> :
 };
 
 DEFINE_TRANSPARENT_OPERAND_ACCESSORS(BinaryOperator, Value)
+//DEFINE_TRANSPARENT_OPERAND_ACCESSORS(Inc, Value)
 
 //===----------------------------------------------------------------------===//
 //                               CastInst Class

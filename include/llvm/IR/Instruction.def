@@ -133,7 +133,7 @@ HANDLE_BINARY_INST(19, FDiv , BinaryOperator)
 HANDLE_BINARY_INST(20, URem , BinaryOperator)
 HANDLE_BINARY_INST(21, SRem , BinaryOperator)
 HANDLE_BINARY_INST(22, FRem , BinaryOperator)
-HANDLE_BINARY_INST(23, Fml  , BinaryOperator)
+HANDLE_BINARY_INST(23, Inc  , IncInst)//MARKINC
 
 // Logical operators (integer operands)
 HANDLE_BINARY_INST(24, Shl  , BinaryOperator) // Shift left  (logical)
@@ -195,7 +195,9 @@ HANDLE_OTHER_INST(62, ShuffleVector, ShuffleVectorInst)  // shuffle two vectors.
 HANDLE_OTHER_INST(63, ExtractValue, ExtractValueInst)// extract from aggregate
 HANDLE_OTHER_INST(64, InsertValue, InsertValueInst)  // insert into aggregate
 HANDLE_OTHER_INST(65, LandingPad, LandingPadInst)  // Landing pad instruction.
-  LAST_OTHER_INST(65)
+HANDLE_OTHER_INST(66, Fire, FireInst)//MARKFIRE
+HANDLE_OTHER_INST(67, NOP, NOPInst)//MARKNOP
+  LAST_OTHER_INST(67)
 
 #undef  FIRST_TERM_INST
 #undef HANDLE_TERM_INST

@@ -11,15 +11,13 @@ define i32 @foo(i32 %x, i32 %y) #0 {
   store i32 %x, i32* %1, align 4
   store i32 %y, i32* %2, align 4
   %3 = load i32, i32* %1, align 4
-  %4 = load i32, i32* %2, align 4  
-  %5 = add nsw i32 %3,%4
+  %4 = load i32, i32* %2, align 4
+  %5 = fml nsw i32 %3, %4
   ret i32 %5
 }
 
 ; Function Attrs: nounwind ssp uwtable
 define i32 @main() #0 {
-  fire
-  nop
   %1 = call i32 @foo(i32 3, i32 4)
   %2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str, i32 0, i32 0), i32 %1)
   ret i32 0

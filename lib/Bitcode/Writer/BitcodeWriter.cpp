@@ -87,7 +87,7 @@ static unsigned GetEncodedBinaryOpcode(unsigned Opcode) {
   default: llvm_unreachable("Unknown binary instruction!");
   case Instruction::Add:
   case Instruction::FAdd: return bitc::BINOP_ADD;
-  case Instruction::Fml: return bitc::BINOP_FML;
+  //case Instruction::Fml: return bitc::BINOP_FML;
   case Instruction::Sub:
   case Instruction::FSub: return bitc::BINOP_SUB;
   case Instruction::Mul:
@@ -112,7 +112,7 @@ static unsigned GetEncodedRMWOperation(AtomicRMWInst::BinOp Op) {
   default: llvm_unreachable("Unknown RMW operation!");
   case AtomicRMWInst::Xchg: return bitc::RMW_XCHG;
   case AtomicRMWInst::Add: return bitc::RMW_ADD;
-  case AtomicRMWInst::Fml: return bitc::RMW_FML;
+  //case AtomicRMWInst::Fml: return bitc::RMW_FML;
   case AtomicRMWInst::Sub: return bitc::RMW_SUB;
   case AtomicRMWInst::And: return bitc::RMW_AND;
   case AtomicRMWInst::Nand: return bitc::RMW_NAND;
@@ -2188,6 +2188,12 @@ static void WriteInstruction(const Instruction &I, unsigned InstID,
       Vals.push_back(GetEncodedSynchScope(cast<StoreInst>(I).getSynchScope()));
     }
     break;
+
+          //MARKNOP
+    case Instruction::NOP:
+      Code = bitc::FUNC_CODE_INST_NOP;
+          break;
+
   case Instruction::AtomicCmpXchg:
     Code = bitc::FUNC_CODE_INST_CMPXCHG;
     PushValueAndType(I.getOperand(0), InstID, Vals, VE);  // ptrty + ptr
